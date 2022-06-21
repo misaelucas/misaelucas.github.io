@@ -1,0 +1,14 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    color: white;
+    font-size: 32px;
+
+    
+}
+
+.sun {
+    margin-right: 07px;
+    margin-top: 03px;
+}
