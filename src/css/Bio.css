@@ -1,0 +1,25 @@
+
+
+.bio { 
+    color: white;
+    font-family: Source Code Pro,monospace;
+    margin-left: 0.75rem;
+    box-sizing: border-box;
+    max-width: 300px;
+
+
+}
+
+.title {
+    margin-top:2rem;
+    font-weight: 800;
+    font-size: 2.25rem;
+}
+
+.shenanigans {
+    margin-top: 2rem;
+}
+.bio p {
+    font-size: 1.125rem;
+    color: rgb(209 213 219);
+}
