@@ -37,8 +37,15 @@
     font-family: monospace;
     font-size: 1.15rem;
     font-weight: 550;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
 }
 
 .links li:hover {
     list-style: none;
+}
+
+a:hover {
+  box-shadow: inset 100px 0 0 0 #76c2e0;
+  color: white;
 }
