@@ -5,9 +5,24 @@ import { RiSunFoggyLine } from 'react-icons/ri'
 function Header() {
   return (
     <div className="navbar">
-        <RiSunFoggyLine className="sun" />
+      <div className="links">
+        <ul>
+          <li>
+            <a href="#">about me</a>
+          </li>
+          <li>
+            <a href="#">contact</a>
+          </li>
+          <li>
+            <a href="#"></a>
+          </li>
+          
 
-        </div>
+        </ul>
+        
+      </div>
+      <RiSunFoggyLine className="sun" />  
+    </div>
   )
 }
 

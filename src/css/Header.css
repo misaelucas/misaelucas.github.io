@@ -1,14 +1,44 @@
 .navbar {
     display: flex;
     width: 100%;
-    flex-direction: row-reverse;
     color: white;
     font-size: 32px;
+    margin-top: -20px;
+    justify-content: space-between;
 
-    
+}
+
+.links {
+    display: flex;
+        
 }
 
 .sun {
-    margin-right: 07px;
-    margin-top: 03px;
+    margin-top: 35px;
+    margin-right: 20px;
+}
+
+.links ul {
+    display: flex;
+    
+    color: white;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-family: monospace;
+    font-size: 1.15rem;
+    font-weight: 550;
+}
+
+.links li:hover {
+    list-style: none;
 }
