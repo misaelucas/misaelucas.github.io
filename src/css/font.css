@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Wotfard';
+    src: local('Wotfard-Regular'), url(./fonts/Wotfard-Regular.otf) format('otf');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }

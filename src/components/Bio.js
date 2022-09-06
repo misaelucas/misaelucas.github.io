@@ -11,14 +11,14 @@ const Bio = () => {
 
     return (
         <div className="bio">
-            <div className="title">Hi, i'm Misa.</div>
+            <div className="title">Hi, i'm Misa. </div>
             <div className="shenanigans">
-                <p>I have {age} years, currently living in Brazil. I'm a fullstack developer with some experience in React. I also enjoy Muay Thai and Chess.</p>
+                <p>I am {age} years old, currently living in Brazil and studying fullstack development at <a href="https://betrybe.com/" className="trybe-link">Trybe</a>. I also enjoy playing Chess and Muay Thai.</p>
                 <p>This is my personal page, feel free to browse through, here you will be able to find my portfolio and a few shenanigans..</p>
             </div>
-            <button type="button" class="slide">
-                <div>Github</div>
-                <i class="icon-arrow-right"></i>
+            <button type="button" className="slide">
+                <div><a href="https://github.com/misaelucas" className="github-link">Github</a></div>
+                <i className="icon-arrow-right"></i>
             </button>
         </div>
     );

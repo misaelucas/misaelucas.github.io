@@ -1,25 +1,80 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+
+@font-face {
+    font-family: 'wotfardregular';
+    src: url('wotfard-regular-webfont.eot');
+    src: url('wotfard-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('wotfard-regular-webfont.woff2') format('woff2'),
+         url('wotfard-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 .bio { 
     color: white;
     font-family: Source Code Pro,monospace;
-    margin-left: 0.75rem;
-    box-sizing: border-box;
-    max-width: 300px;
-
+    margin-left: 1rem;
+    
 
 }
 
 .title {
     margin-top:2rem;
+    margin-right:0.5rem;
     font-weight: 800;
     font-size: 2.25rem;
+    font-family: 'wotfardregular', sans-serif;
 }
 
 .shenanigans {
     margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .bio p {
     font-size: 1.125rem;
     color: rgb(209 213 219);
+    font-family: 'wotfardregular', sans-serif;
+}
+
+.github-link {
+ text-decoration: none;
+ color: black;   
+}
+
+.trybe-link {
+    color: rgb(37, 173, 117);
+
+}
+
+@media (max-width: 500px) {
+    .bio  {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1368px) {
+
+    .bio {
+        width: 650px;
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+
+    .title {
+        font-size: 5rem;
+    }
+    
+    .bio p {
+        font-size: 1.2rem;
+    }
+
+    .slide {
+
+        margin-top: 25px;
+    }
+
 }

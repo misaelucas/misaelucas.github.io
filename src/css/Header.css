@@ -14,8 +14,10 @@
 }
 
 .sun {
-    margin-top: 40px;
+    position: fixed;
+    right: 0;
     margin-right: 20px;
+    margin-top: 35px;
     font-size: 1.8rem;
 }
 
@@ -50,3 +52,10 @@ a:hover {
   box-shadow: inset 100px 0 0 0 #76c2e0;
   color: white;
 }
+
+/* @media (max-width: 416px) {
+
+    .sun {
+        margin-right: -30px;
+    }
+} */

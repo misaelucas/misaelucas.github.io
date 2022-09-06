@@ -1,7 +1,6 @@
 import React from 'react'
 import '../css/Header.css';
-import { RiSunFoggyLine } from 'react-icons/ri'
-
+  
 function Header() {
   return (
     <div className="navbar">
@@ -21,7 +20,6 @@ function Header() {
         </ul>
         
       </div>
-      <RiSunFoggyLine className="sun" />  
     </div>
   )
 }
