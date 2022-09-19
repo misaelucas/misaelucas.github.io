@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react';
+
 import '../css/Header.css';
-  
+
+
+
 function Header() {
+
   return (
-    <div className="navbar">
+    <div className="navbar" >
       <div className="links">
         <ul>
           <li>
@@ -15,11 +19,12 @@ function Header() {
           <li>
             <a href="#"></a>
           </li>
-          
+
 
         </ul>
-        
+
       </div>
+
     </div>
   )
 }

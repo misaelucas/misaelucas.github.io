@@ -30,7 +30,7 @@
   
   .slide::after {
     content: "";
-    background-color: #76c2e0;
+    background-color: #76c2e0 !important;
     width: 100%;
     z-index: -1;
     position: absolute;

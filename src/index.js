@@ -3,6 +3,10 @@ import {
   BrowserRouter, Route, Routes
 } from "react-router-dom";
 import App from "./App";
+import './App.css'
+
+
+
 // import your route components too
 
 const root = ReactDOM.createRoot(
@@ -10,7 +14,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <BrowserRouter>
-    <Routes>
+    <Routes >
       <Route path="/" element={<App />} />
     </Routes>
   </BrowserRouter>
