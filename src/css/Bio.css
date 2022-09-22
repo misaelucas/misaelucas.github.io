@@ -57,7 +57,7 @@
     position: absolute;
     width: 332px;
     top: 18%;
-    right:6%;    
+    right:8%;    
 }
 .github-link {
     
@@ -80,8 +80,6 @@
 
     .bio p {
         font-size: 1.125rem;
-        font-family: 'wotfardregular', sans-serif;
-        word-spacing: px;
     }
 }
 
@@ -90,7 +88,6 @@
 
     .bio p {
         font-size: 1rem;
-        font-family: 'wotfardregular', sans-serif;
     }
     .shenanigans {
         max-width: 86%;
@@ -100,3 +97,11 @@
     }
 }
 
+@media (max-width: 375px) {
+
+
+    .bio p {
+        font-size: 0.95rem;
+    }
+   
+}
