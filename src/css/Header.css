@@ -48,7 +48,7 @@
     list-style: none;
 }
 
-a:hover {
+.links li a:hover {
   box-shadow: inset 100px 0 0 0 #76c2e0;
   color: white;
 }

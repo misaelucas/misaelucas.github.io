@@ -12,16 +12,24 @@ const Bio = () => {
 
     return (
         <div className="bio" >
+            <div className="bio-container">
                 <div className="title">Hi, i'm Misa. </div>
                 <div className="shenanigans">
                     <p>I am {age} years old, currently living in Brazil and studying fullstack development at <a href="https://betrybe.com/" className="trybe-link">Trybe</a>. I also enjoy playing Chess and Muay Thai.</p>
-                    <p>This is my personal page, feel free to browse through, here you will be able to find my portfolio and a few shenanigans..</p>
+                    <p>This is my personal page, feel free to browse through, here you will be able to find my portfolio, stuff about me and a few shenanigans..</p>
                 </div>
-            <button type="button" className="slide">
-                <div><a href="https://github.com/misaelucas" target="_blank" rel="noreferrer" className="github-link" >Github</a></div>
-                <i className="icon-arrow-right"></i>
-            </button>
-            <img src={duck} alt="a drawing of a duck with a variety of swords in his back, and he's also using an armor, which display his name: DUCK" className="responsive" />
+
+                <button type="button" class="slide">
+                    <div><a href="https://github.com/misaelucas" target="_blank" rel="noreferrer" className="github-link" >github</a></div>
+                    <i class="icon-arrow-right"></i>
+                </button>
+
+            </div>
+
+
+
+            <div><img src={duck} alt="a drawing of a duck with a variety of swords in his back, and he's also using an armor, which display his name: DUCK" className="responsive" /></div>
+
         </div>
     );
 };
