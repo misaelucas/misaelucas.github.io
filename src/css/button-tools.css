@@ -51,7 +51,7 @@
       
     }
       /*button div (button text before hover)*/
-      button:hover div{opacity: 0; transform: translate(100%,0)}
+      .buttonfix button:hover div{opacity: 0; transform: translate(100%,0)}
       .buttonfix button div{
         text-transform: uppercase;
         letter-spacing: 3px;
