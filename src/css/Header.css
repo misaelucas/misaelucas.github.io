@@ -1,55 +1,45 @@
 .navbar {
-    display: flex;
-    width: 100%;
-    color: white;
-    font-size: 32px;
-    margin-top: -20px;
-    justify-content: space-between;
-
+  display: flex;
+  width: 100%;
+  color: white;
+  font-size: 32px;
+  margin-top: -20px;
+  justify-content: space-between;
 }
 
 .links {
-    display: flex;
-        
-}
-
-.sun {
-    position: fixed;
-    right: 0;
-    margin-right: 20px;
-    margin-top: 35px;
-    font-size: 1.8rem;
+  display: flex;
+  margin-top: 30px;
 }
 
 .links ul {
-    display: flex;
-    
-    color: white;
-    flex-wrap: wrap;
-    text-decoration: none;
+  display: flex;
+
+  color: white;
+  flex-wrap: wrap;
+  text-decoration: none;
 }
 
 .links li {
-    list-style: none;
+  list-style: none;
 }
 
 .links li a {
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
-    font-family: monospace;
-    font-size: 1.15rem;
-    font-weight: 550;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  font-family: monospace;
+  font-size: 1.15rem;
+  font-weight: 550;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .links li:hover {
-    list-style: none;
+  list-style: none;
 }
 
 .links li a:hover {
-  box-shadow: inset 100px 0 0 0 #76c2e0;
+  box-shadow: inset 100px 0 0 0 #1cd68f;
   color: white;
 }
 

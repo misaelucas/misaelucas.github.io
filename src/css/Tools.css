@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "wotfardregular";
+  src: url("wotfard-regular-webfont.eot");
+  src: url("wotfard-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("wotfard-regular-webfont.woff2") format("woff2"),
+    url("wotfard-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tools-container p {
+  font-size: 1rem;
+  font-family: "wotfardregular", sans-serif;
+}
+
+.tools-container {
+    text-align: center;
+    color: white;
+}
+
+.tools-container title {
+    font-family: "wotfardregular", sans-serif;
+    font-size: 1.5rem;
+
+}
+
+hr {
+    border-width: 1px;
+    margin-top: 40px;
+    border-color: #1cd68f;
+
+}
+
+.tools-container div.container {
+    text-align: center;
+
+  }
+  
+  .tools-container ul.myUL {
+    display: inline-block;
+    text-align: left;
+    list-style-type: none;
+    font-size: 1.25rem;
+    font-family: "wotfardregular", sans-serif;
+
+
+  }
+  
+.title {
+  margin-left: -5px;
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: "wotfardregular", sans-serif;
+
+}

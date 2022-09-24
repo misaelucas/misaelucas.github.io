@@ -1,32 +1,26 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../css/Header.css";
 
-import '../css/Header.css';
-
-
-
-function Header() {
+function Header(props) {
 
   return (
-    <div className="navbar" >
+    <div className="navbar">
       <div className="links">
         <ul>
           <li>
-            <a href="#">about me</a>
+            {props.home ? <Link to="/">go back</Link> : <p></p> }
           </li>
           <li>
-            <a href="#">contact</a>
+            <Link to="/contact">contact</Link>
           </li>
           <li>
-            <a href="#"></a>
+            <Link to="/tools">tools</Link>
           </li>
-
-
         </ul>
-
       </div>
-
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;

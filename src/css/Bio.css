@@ -1,107 +1,94 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css");
 
 @font-face {
-    font-family: 'wotfardregular';
-    src: url('wotfard-regular-webfont.eot');
-    src: url('wotfard-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('wotfard-regular-webfont.woff2') format('woff2'),
-         url('wotfard-regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "wotfardregular";
+  src: url("wotfard-regular-webfont.eot");
+  src: url("wotfard-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("wotfard-regular-webfont.woff2") format("woff2"),
+    url("wotfard-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.bio { 
-    color: white;
-    font-family: Source Code Pro,monospace;
-    margin-left: 1rem;
-    width: 500px;
-    display: flex;
-    
-
+.bio {
+  color: white;
+  font-family: Source Code Pro, monospace;
+  margin-left: 1rem;
+  width: 500px;
+  display: flex;
 }
 
 .bio-container {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    
+  position: absolute;
+  top: 20%;
+  left: 10%;
 }
 
 .title {
-    margin-left: -5px;
-    font-weight: 600;
-    font-size: 5rem;
-    font-family: 'wotfardregular', sans-serif;
+  margin-left: -5px;
+  font-weight: 600;
+  font-size: 5rem;
+  font-family: "wotfardregular", sans-serif;
 }
 
 .shenanigans {
-    margin-top: 2rem;
-    margin-left: 0rem;
-    margin-right: 1rem;
-    font-weight: 600;
-    max-width: 52%;
-    text-align: justify;
+  margin-top: 2rem;
+  margin-left: 0rem;
+  margin-right: 1rem;
+  font-weight: 600;
+  max-width: 52%;
+  text-align: justify;
 }
 
 .bio p {
-    font-size: 1rem;
-    font-family: 'wotfardregular', sans-serif;
-    
+  font-size: 1rem;
+  font-family: "wotfardregular", sans-serif;
 }
 
 .responsive {
-    border-radius: 5%;
-    position: absolute;
-    width: 332px;
-    top: 18%;
-    right:8%;    
+  border-radius: 5%;
+  position: absolute;
+  width: 332px;
+  top: 18%;
+  right: 8%;
 }
 .github-link {
-    
- text-decoration: none;
- color: black;   
+  text-decoration: none;
+  color: black;
 }
 
 .trybe-link {
-    color: #1cd68f;
-
+  color: #1cd68f;
 }
 
 @media (max-width: 964px) {
-    .responsive {
-        display: none;
-}
-    .shenanigans {
-        max-width: 70%;
-    }
+  .responsive {
+    display: none;
+  }
+  .shenanigans {
+    max-width: 70%;
+  }
 
-    .bio p {
-        font-size: 1.125rem;
-    }
+  .bio p {
+    font-size: 1.125rem;
+  }
 }
 
 @media (max-width: 564px) {
-
-
-    .bio p {
-        font-size: 1rem;
-    }
-    .shenanigans {
-        max-width: 86%;
-    }
-    .bio-container {
-        top: 14%
-    }
+  .bio p {
+    font-size: 1rem;
+  }
+  .shenanigans {
+    max-width: 86%;
+  }
+  .bio-container {
+    top: 14%;
+  }
 }
 
 @media (max-width: 375px) {
-
-
-    .bio p {
-        font-size: 0.95rem;
-    }
-   
+  .bio p {
+    font-size: 0.95rem;
+  }
 }

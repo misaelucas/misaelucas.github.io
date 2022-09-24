@@ -1,21 +1,19 @@
 import ReactDOM from "react-dom/client";
-import {
-  BrowserRouter, Route, Routes
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./App";
-import './App.css'
-
-
+import Tools from "./pages/Tools";
+import "./App.css";
+import MacroCalculator from "./pages/MacroCalculator";
 
 // import your route components too
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root")
-);
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <Routes >
+    <Routes>
       <Route path="/" element={<App />} />
+      <Route path="/tools" element={<Tools />} />
+      <Route path="/macrocalculator" element={<MacroCalculator />} />
     </Routes>
   </BrowserRouter>
 );
