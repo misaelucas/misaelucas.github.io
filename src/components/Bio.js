@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "../css/Bio.css";
 import "../css/Slide.css";
-import duck from "../img/duck.png";
+import duck from "../img/duck.gif";
 
 const Bio = () => {
   const birthDate = 1998;

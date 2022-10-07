@@ -26,6 +26,7 @@
 }
 
 .title {
+  
   margin-left: -5px;
   font-weight: 600;
   font-size: 5rem;
@@ -36,21 +37,19 @@
   margin-top: 2rem;
   margin-left: 0rem;
   margin-right: 1rem;
-  font-weight: 600;
   max-width: 52%;
-  text-align: justify;
+  line-height: 1.5;
 }
 
 .bio p {
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-family: "wotfardregular", sans-serif;
 }
 
 .responsive {
-  border-radius: 5%;
   position: absolute;
-  width: 332px;
-  top: 18%;
+  width: 372px;
+  top: 20%;
   right: 8%;
 }
 .github-link {
@@ -71,13 +70,13 @@
   }
 
   .bio p {
-    font-size: 1.125rem;
+    font-size: 1.15rem;
   }
 }
 
 @media (max-width: 564px) {
   .bio p {
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
   .shenanigans {
     max-width: 86%;
@@ -85,10 +84,8 @@
   .bio-container {
     top: 14%;
   }
-}
 
-@media (max-width: 375px) {
-  .bio p {
-    font-size: 0.95rem;
-  }
+  .title {
+  font-size: 3.3rem;
+}
 }
