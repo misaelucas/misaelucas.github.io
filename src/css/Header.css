@@ -32,11 +32,12 @@
   font-size: 1.15rem;
   font-weight: 550;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 3px;
+  margin-left: 50px;
+
 }
 
-.links li:hover {
-  list-style: none;
-}
 
 .links li a:hover {
   box-shadow: inset 100px 0 0 0 #1cd68f;

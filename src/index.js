@@ -2,6 +2,8 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./App";
 import Tools from "./pages/Tools";
+import Test from "./components/Test";
+
 import "./App.css";
 import MacroCalculator from "./pages/MacroCalculator";
 
@@ -14,6 +16,7 @@ root.render(
       <Route path="/" element={<App />} />
       <Route path="/tools" element={<Tools />} />
       <Route path="/macrocalculator" element={<MacroCalculator />} />
+      <Route path="/teste" element={<Test />} />
     </Routes>
   </BrowserRouter>
 );

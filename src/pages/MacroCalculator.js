@@ -59,39 +59,40 @@ export default function MacroCalculator() {
             </tr>
             <tr className="tr-wrapper">
               <td className="input-wrapper">
-                <label htmlFor="age">
-                  Idade:{"\u00a0"}
-                  <input
-                    onChange={(e) => setAge(e.target.value)}
-                    type="text"
-                    className="input-text"
-                    name="age"
-                    maxLength="3"
-                  ></input>
-                </label>
-                <label htmlFor="weight">
-                  Peso:
-                  <input
-                    onChange={(e) => setWeight(e.target.value)}
-                    type="text"
-                    className="input-text"
-                    name="weight"
-                    maxLength="3"
-                    placeholder="kg"
-                  ></input>
-                </label>
-                <label htmlFor="height">
-                  Altura:
-                  <input
-                    onChange={(e) => setHeight(e.target.value)}
-                    type="text"
-                    className="input-text"
-                    name="Height"
-                    maxLength="3"
-                    placeholder="cm"
-                  ></input>
-                </label>
-                <label htmlFor="atividade">
+                <label htmlFor="age">Idade:{"\u00a0"}</label>
+                <input
+                  onChange={(e) => setAge(e.target.value)}
+                  type="text"
+                  className="input-text"
+                  name="age"
+                  maxLength="3"
+                ></input>
+              </td>
+              <td className="input-wrapper">
+                <label htmlFor="weight">Peso:</label>
+
+                <input
+                  onChange={(e) => setWeight(e.target.value)}
+                  type="text"
+                  className="input-text"
+                  name="weight"
+                  maxLength="3"
+                  placeholder="kg"
+                ></input>
+              </td>
+              <td className="input-wrapper">
+                <label htmlFor="height">Altura:</label>
+                <input
+                  onChange={(e) => setHeight(e.target.value)}
+                  type="text"
+                  className="input-text"
+                  name="Height"
+                  maxLength="3"
+                  placeholder="cm"
+                ></input>
+              </td>
+              <td className="select-wrapper">
+                <label htmlFor="atividade" id="atividade">
                   Atividade:{"\u00a0"}
                   <select
                     name="atividade"
@@ -110,33 +111,31 @@ export default function MacroCalculator() {
                   </select>
                 </label>
                 <button
-            type="submit"
-            onClick={calculateStuff}
-            className="calculate-button buttons1"
-          >
-            bulking
-          </button>
-          <button
-            type="submit"
-            onClick={calculateStuff}
-            className="calculate-button buttons2"
-          >
-            cutting
-          </button>
-          <button
-            type="submit"
-            onClick={calculateStuff}
-            className="calculate-button buttons3"
-          >
-            recomp
-          </button>
+                  type="submit"
+                  onClick={calculateStuff}
+                  className="calculate-button buttons1"
+                >
+                  bulking
+                </button>
+                <button
+                  type="submit"
+                  onClick={calculateStuff}
+                  className="calculate-button buttons2"
+                >
+                  cutting
+                </button>
+                <button
+                  type="submit"
+                  onClick={calculateStuff}
+                  className="calculate-button buttons3"
+                >
+                  recomp
+                </button>
               </td>
             </tr>
           </tbody>
         </table>
-        <div className="buttons-calc">
-          
-        </div>
+        <div className="buttons-calc"></div>
       </form>
     </div>
   );

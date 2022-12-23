@@ -14,7 +14,6 @@
 .bio {
   color: white;
   font-family: Source Code Pro, monospace;
-  margin-left: 1rem;
   width: 500px;
   display: flex;
 }
@@ -26,9 +25,7 @@
 }
 
 .title {
-  
   margin-left: -5px;
-  font-weight: 600;
   font-size: 5rem;
   font-family: "wotfardregular", sans-serif;
 }
@@ -44,6 +41,8 @@
 .bio p {
   font-size: 1.15rem;
   font-family: "wotfardregular", sans-serif;
+  margin-top: 15px;
+
 }
 
 .responsive {
@@ -57,16 +56,21 @@
   color: black;
 }
 
-.trybe-link {
+.link {
   color: #1cd68f;
 }
 
-@media (max-width: 964px) {
+.link:hover {
+}
+
+@media (max-width: 986px) {
   .responsive {
-    display: none;
+    top: 75%;
+    left: 10%;
+    width: 20rem;
   }
   .shenanigans {
-    max-width: 70%;
+    max-width: 55%;
   }
 
   .bio p {
@@ -74,18 +78,29 @@
   }
 }
 
+@media (max-width: 782px) {
+.responsive {
+  margin-top: 45px;
+}
+}
 @media (max-width: 564px) {
+  .responsive {
+    top: 71%;
+    left: 8%;
+    width: 20rem;
+  }
   .bio p {
     font-size: 1.15rem;
+    line-height: 1.7;
   }
   .shenanigans {
-    max-width: 86%;
+    max-width: 80%;
   }
   .bio-container {
     top: 14%;
   }
 
   .title {
-  font-size: 3.3rem;
-}
+    font-size: 4rem;
+  }
 }
