@@ -19,8 +19,8 @@ const Bio = () => {
   const age = getAge("1998/09/22");
 
   return (
-    <div className="bio">
-      <div className="bio-container">
+    <div className="bio fadein">
+      <div className="bio-container ">
         <div className="title">Hi, i'm Misa. </div>
         <div className="shenanigans">
           <p>
