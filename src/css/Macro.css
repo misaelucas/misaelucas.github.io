@@ -1,131 +1,43 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.form-container {
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  text-align: center;
+  font-family: "wotfardregular", sans-serif;
+
 }
 
-body {
-}
-
-.formulario {
-  color: white;
-  font-family: "Montserrat", Arial, sans-serif;
-  font-size: 1.5rem;
-  position: relative;
-  margin-left: 30% !important;
-  margin-top: 5% !important;
-  max-width: 900px;
-  width: 100%;
-  opacity: 1;
-  border-radius: 6px;
-  padding: 30px;
-  margin: 0 15px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-tbody {
-}
 .form-title {
-  font-size: 2rem;
+  font-size: 3rem;
+  margin-top: 60px;
 }
 
-.genero {
-  display: flex;
-  justify-content: left;
-  margin-bottom: 30px;
-}
-.xi {
-}
-.radio-input {
-  margin-left: 10px;
-}
-
-.input-text {
-  width: 45px;
-  height: 30px;
-  outline: none;
-  color: #555;
-}
-.input-wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 130px;
-  padding-top: 15px;
-}
-
-.select-wrapper {
-  display: flex;
-  flex-direction: column !important;
-}
-
-
-.atividade {
-  
-  width: 200px;
-  height: 30px;
-  border-radius: 4px;
-  margin-left: -10px;
+.form-attr {
+  margin-top: 60px;
+  font-size: 1.5rem;
 
 }
-#atividade {
-  display: flex;
-  margin-top: 35px;
-  justify-content: space-between;
-  
-}
-.tr-wrapper {
+
+.form-attr2 {
+  padding-top: 20px;
 }
 
-.buttons1:after {
-  background-color: rgb(15, 113, 211) !important;
+.form-attr3 {
+  padding-top: 20px;
+
 }
 
-.buttons2:after {
-  background-color: rgb(255, 23, 185) !important;
-}
-.buttons3:after {
-  display: flex;
-  flex-direction: row-reverse;
+.input-text{
+  width: 20px;
 }
 
-/* CSS */
-.calculate-button {
-  font-size: 16px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding: 13px 20px 13px;
-  outline: 0;
-  border: 1px solid black;
-  cursor: pointer;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+span ~ span {
+  padding-left: 15px;
 }
 
-.calculate-button:after {
-  content: "";
-  background-color: #1cd68f;
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 7px;
-  left: 7px;
-  transition: 0.2s;
-}
-
-.calculate-button:hover:after {
-  top: 0px;
-  left: 0px;
-}
-
-@media (min-width: 768px) {
-  .calculate-button {
-    padding: 13px 50px 13px;
-  }
+.labels {
+  padding-right: 5px;
 }

@@ -12,67 +12,25 @@
 }
 
 .bio {
-  color: white;
+  color: whitesmoke;
   font-family: Source Code Pro, monospace;
-  width: 500px;
   display: flex;
-}
-
-.bio-container {
-  position: absolute;
-  top: 20%;
-  left: 10%;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-left: 12rem;
 }
 
 .title {
   margin-left: -5px;
-  font-size: 5rem;
+  font-size: 6rem;
   font-family: "wotfardregular", sans-serif;
   
 }
 
-.fadein {
-
--webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
 .shenanigans {
-  margin-top: 2rem;
   margin-left: 0rem;
   margin-right: 1rem;
-  max-width: 52%;
+  max-width: 700px;
   line-height: 1.5;
 }
 
@@ -80,14 +38,13 @@
   font-size: 1.15rem;
   font-family: "wotfardregular", sans-serif;
   margin-top: 15px;
-
 }
 
 .responsive {
-  position: absolute;
-  width: 372px;
-  top: 20%;
-  right: 8%;
+  position: relative;
+  max-width: 372px;
+  top: -27rem;
+  left: 65%;
 }
 .github-link {
   text-decoration: none;
@@ -98,47 +55,162 @@
   color: #1cd68f;
 }
 
-.link:hover {
+.fadein {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
 }
 
-@media (max-width: 986px) {
-  .responsive {
-    top: 75%;
-    left: 10%;
-    width: 20rem;
+@keyframes fadein {
+  from {
+    opacity: 0;
   }
-  .shenanigans {
-    max-width: 55%;
-  }
-
-  .bio p {
-    font-size: 1.15rem;
+  to {
+    opacity: 1;
   }
 }
 
-@media (max-width: 782px) {
-.responsive {
-  margin-top: 45px;
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-@media (max-width: 564px) {
-  .responsive {
-    top: 71%;
-    left: 8%;
-    width: 20rem;
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
   }
-  .bio p {
-    font-size: 1.15rem;
-    line-height: 1.7;
+  to {
+    opacity: 1;
   }
-  .shenanigans {
-    max-width: 80%;
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
   }
-  .bio-container {
-    top: 14%;
+  to {
+    opacity: 1;
+  }
+}
+
+.fadein2 {
+  -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 5s; /* Firefox < 16 */
+  -ms-animation: fadein 5s; /* Internet Explorer */
+  -o-animation: fadein 5s; /* Opera < 12.1 */
+  animation: fadein 5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 475px) {
+  .bio {
+    margin-left: 2rem;
+    margin-top: -15px;
   }
 
   .title {
-    font-size: 4rem;
+    margin-left: -5px;
+    font-size: 3rem;
+  
   }
+
+  .shenanigans {
+    margin-top: -20px;
+    margin-left: 0rem;
+    margin-right: 1rem;
+    max-width: 700px;
+    line-height: 1.5;
+    
+  }
+  
+  .bio p {
+    font-size: 1rem;
+    font-family: "wotfardregular", sans-serif;
+    margin-top: 5px;
+    font-weight: 600;
+  }
+
+  .responsive {
+    width: 300px;
+    left: 5%;
+    top: 50%;
+  }
+  
+  .navbar {
+    margin-top: -50px;
+  }
+
+  .github-button {
+    margin-top: -40px;
+    display: none;
+  }
+  
 }

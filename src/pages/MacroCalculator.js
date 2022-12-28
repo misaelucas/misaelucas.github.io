@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import "../css/Header.css";
 import "../css/Macro.css";
 
-export default function MacroCalculator() {
+function MacroCalculator() {
   const [isHome, setHome] = useState(true);
   const [weight, setWeight] = useState("");
   const [height, setHeight] = useState("");
@@ -31,112 +31,114 @@ export default function MacroCalculator() {
   return (
     <div>
       <Header home={isHome} />
-      <form className="formulario">
-        <table>
-          <tbody>
-            <tr className="genero">
-              <td>Gênero:</td>
-              <td>
-                <input
-                  type="radio"
-                  name="gender"
-                  className="radio-input"
-                  value="Male"
-                  id="male"
-                  onClick={() => setGender("male")}
-                ></input>
-                <label htmlFor="male">{"\u00a0"}homem</label>
-                <input
-                  type="radio"
-                  name="gender"
-                  className="radio-input"
-                  value="Female"
-                  id="female"
-                  onClick={() => setGender("female")}
-                ></input>
-                <label htmlFor="female">{"\u00a0"}mulher</label>
-              </td>
-            </tr>
-            <tr className="tr-wrapper">
-              <td className="input-wrapper">
-                <label htmlFor="age">Idade:{"\u00a0"}</label>
-                <input
-                  onChange={(e) => setAge(e.target.value)}
-                  type="text"
-                  className="input-text"
-                  name="age"
-                  maxLength="3"
-                ></input>
-              </td>
-              <td className="input-wrapper">
-                <label htmlFor="weight">Peso:</label>
+      <div className="form-container">
+        <div className="form-title">macro calculator</div>
+        <div className="form-attr">
+          <input
+            type="radio"
+            name="gender"
+            className="radio-input"
+            value="Male"
+            id="male"
+            onClick={() => setGender("male")}
+          ></input>
+          <label htmlFor="male">{"\u00a0"}male</label>{" "}
+          <input
+            type="radio"
+            name="gender"
+            className="radio-input"
+            value="Female"
+            id="female"
+            onClick={() => setGender("female")}
+          ></input>
+          <label htmlFor="female">{"\u00a0"}female</label>
+        </div>
+        <div className="form-attr2">
+          <span>
+            <label htmlFor="age">Age:{"\u00a0"}</label>
+            <input
+              onChange={(e) => setAge(e.target.value)}
+              type="text"
+              className="input-text"
+              name="age"
+              maxLength="3"
+            ></input>
+          </span>
+          <span>
+            <label htmlFor="weight" className="labels">
+              Weight:
+            </label>
 
-                <input
-                  onChange={(e) => setWeight(e.target.value)}
-                  type="text"
-                  className="input-text"
-                  name="weight"
-                  maxLength="3"
-                  placeholder="kg"
-                ></input>
-              </td>
-              <td className="input-wrapper">
-                <label htmlFor="height">Altura:</label>
-                <input
-                  onChange={(e) => setHeight(e.target.value)}
-                  type="text"
-                  className="input-text"
-                  name="Height"
-                  maxLength="3"
-                  placeholder="cm"
-                ></input>
-              </td>
-              <td className="select-wrapper">
-                <label htmlFor="atividade" id="atividade">
-                  Atividade:{"\u00a0"}
-                  <select
-                    name="atividade"
-                    className="atividade"
-                    onChange={(e) => setActivityLevel(e.target.value)}
-                    value={activitylevel}
-                  >
-                    <option value="1.4" defaultValue="Mui">
-                      Muito Sedentário
-                    </option>
-                    <option value="1.5">Sedentário pouco ativo</option>
-                    <option value="1.6">Sedentário mais ativo</option>
-                    <option value="1.7">Moderadamente ativo (treina) </option>
-                    <option value="1.8">Muito ativo</option>
-                    <option value="2">Atividade intensa</option>
-                  </select>
-                </label>
-                <button
-                  type="submit"
-                  onClick={calculateStuff}
-                  className="calculate-button buttons1"
-                >
-                  bulking
-                </button>
-                <button
-                  type="submit"
-                  onClick={calculateStuff}
-                  className="calculate-button buttons2"
-                >
-                  cutting
-                </button>
-                <button
-                  type="submit"
-                  onClick={calculateStuff}
-                  className="calculate-button buttons3"
-                >
-                  recomp
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <div className="buttons-calc"></div>
-      </form>
+            <input
+              onChange={(e) => setWeight(e.target.value)}
+              type="text"
+              className="input-text"
+              name="weight"
+              maxLength="3"
+              placeholder="kg"
+            ></input>
+          </span>
+          <span>
+            {" "}
+            <label htmlFor="height" className="labels">
+              Height:
+            </label>
+            <input
+              onChange={(e) => setHeight(e.target.value)}
+              type="text"
+              className="input-text"
+              name="Height"
+              maxLength="3"
+              placeholder="cm"
+            ></input>
+          </span>
+        </div>
+        <div className="form-attr3">
+          {" "}
+          <label htmlFor="atividade" id="atividade">
+            Atividade:{"\u00a0"}
+            <select
+              name="atividade"
+              className="atividade"
+              onChange={(e) => setActivityLevel(e.target.value)}
+              value={activitylevel}
+            >
+              <option value="1.4" defaultValue="Mui">
+                Muito Sedentário
+              </option>
+              <option value="1.5">Sedentário pouco ativo</option>
+              <option value="1.6">Sedentário mais ativo</option>
+              <option value="1.7">Moderadamente ativo (treina) </option>
+              <option value="1.8">Muito ativo</option>
+              <option value="2">Atividade intensa</option>
+            </select>
+          </label>
+        </div>
+        <div className="form-buttons">
+          <button
+            type="submit"
+            onClick={calculateStuff}
+            className="calculate-button buttons1"
+          >
+            bulking
+          </button>
+          <button
+            type="submit"
+            onClick={calculateStuff}
+            className="calculate-button buttons2"
+          >
+            cutting
+          </button>
+          <button
+            type="submit"
+            onClick={calculateStuff}
+            className="calculate-button buttons3"
+          >
+            recomp
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
+export default MacroCalculator;
