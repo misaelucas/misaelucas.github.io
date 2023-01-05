@@ -25,8 +25,8 @@ const Bio = () => {
       <div className="shenanigans fadein2">
         <p>
           I am {age} years old, currently studying fullstack development, i have
-          done a few jobs, you can check them at my github. I also have great
-          interest in muay thai, stoicism and i really like good poems.
+          done a few projects, you can check them at my github. I'm deeply
+          interested in muay thai, stoicism and good poems.
         </p>
         <p>
           This is my personal page, feel free to browse through, here you will
@@ -52,7 +52,7 @@ const Bio = () => {
       </div>
       <img
         src={duck}
-        alt="a drawing of a duck with a variety of swords in his back, and he's also using an armor, which display his name: DUCK"
+        alt="Gengar, haunter and gastly, three pokemons. A gif, they are laughing."
         className="responsive fadein2"
       />
     </div>
