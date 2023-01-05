@@ -44,7 +44,10 @@
 @media (max-width: 475px) {
  
   .xD {
-    display: flex;
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+    right: 16%;
   }
 
   .menu-item a {
@@ -60,6 +63,6 @@
   }
 
   .bm-cross {
-    display: none;
+    
   }
 }

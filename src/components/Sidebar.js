@@ -1,5 +1,5 @@
 import React from "react";
-import { reveal as Menu } from "react-burger-menu";
+import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-router-dom";
 
 import "../css/sidebar.css";
@@ -7,7 +7,7 @@ function Sidebar() {
   return (
     <div className="xD">
       {" "}
-      <Menu width={"201px"}>
+      <Menu width={"201px"} right>
         <a id="home" className="menu-item" href="/">
           <Link to="/">home</Link>
         </a>

@@ -13,7 +13,6 @@ function App() {
 
   return (
     <div className="App">
-      <Sidebar />
 
       <Header home={isHome} />
       <Bio />

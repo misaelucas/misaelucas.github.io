@@ -9,7 +9,6 @@ function Contact() {
 
   return (
     <>
-    <Sidebar />
       <Header home={isHome} />
       <div className="container">
         <h2 className="">So, how to reach me?</h2>

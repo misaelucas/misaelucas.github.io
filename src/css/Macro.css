@@ -34,9 +34,7 @@
   width: 20px;
 }
 
-span ~ span {
-  padding-left: 15px;
-}
+
 
 .labels {
   padding-right: 5px;
