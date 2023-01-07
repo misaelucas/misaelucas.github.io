@@ -18,7 +18,8 @@ p {
 .contact {
   padding-top: 5px;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 700px;
+  font-size: 20px;
   line-height: 1.7rem;
   font-weight: 500;
   color: rgb(255, 255, 255);
@@ -48,3 +49,14 @@ p {
   background-color: #263747;
  }
 
+
+ @media (max-width: 500px) {
+ p {
+  font-size: 18px;
+ }
+
+ .contact {
+  max-width: 80%;
+
+ }
+ }

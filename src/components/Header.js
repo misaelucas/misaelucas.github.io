@@ -17,9 +17,9 @@ function Header(props) {
             <li>
               <Link to="/contact">contact</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/tools">tools</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

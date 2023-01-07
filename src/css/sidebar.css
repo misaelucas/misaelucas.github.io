@@ -47,7 +47,7 @@
     display: inline-block;
     position: absolute;
     top: 0%;
-    right: 16%;
+    right: 19%;
   }
 
   .menu-item a {
@@ -62,7 +62,5 @@
   
   }
 
-  .bm-cross {
-    
-  }
+
 }

@@ -14,9 +14,9 @@ function Sidebar() {
         <a id="about" className="menu-item" href="/about">
           <Link to="/contact">contact</Link>
         </a>
-        <a id="contact" className="menu-item" href="/contact">
+        {/* <a id="contact" className="menu-item" href="/contact">
           <Link to="/tools">tools</Link>
-        </a>
+        </a> */}
       </Menu>
     </div>
   );
