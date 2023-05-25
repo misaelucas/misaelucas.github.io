@@ -50,6 +50,25 @@ const Bio = () => {
           <i className="icon-arrow-right"></i>
         </button>
       </div>
+      <div className="projects-container">
+        <div className="container-title">Projects</div>
+        <div className="projects">
+          <ul>
+            <li>
+              <a href="https://centromedicohebrom.com.br" target="_blank">
+                Centro Médico Hebrom
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="https://github.com/misaelucas/baldersbra" target="_blank">
+                Baldersbra
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <img
         src={duck}
         alt="Gengar, haunter and gastly, three pokemons. A gif, they are laughing."
