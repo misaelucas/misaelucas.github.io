@@ -67,6 +67,13 @@ const Bio = () => {
               </a>
             </li>
           </ul>
+          <ul>
+            <li>
+              <a href="https://github.com/misaelucas/crud" target="_blank">
+                Express CRUD 
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
       <img

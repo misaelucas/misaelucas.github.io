@@ -42,7 +42,7 @@
 .responsive {
   position: relative;
   max-width: 372px;
-  top: -40rem;
+  top: -45rem;
   left: 65%;
 }
 .github-link {
@@ -112,6 +112,7 @@ ul li a:hover {
 
 @media (max-width: 1024px) {
   .responsive {
+    display: none;
     width: 300px;
     left: 5%;
     top: 50%;
@@ -143,6 +144,8 @@ ul li a:hover {
   }
 
   .responsive {
+    display: none;
+
     width: 300px;
     left: -1%;
     top: -20px;
@@ -181,6 +184,8 @@ ul li a:hover {
   }
 
   .responsive {
+    display: none;
+
     width: 300px;
     left: -5%;
     top: 50%;
