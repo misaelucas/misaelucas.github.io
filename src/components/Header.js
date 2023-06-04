@@ -7,19 +7,17 @@ import Sidebar from "./Sidebar";
 function Header(props) {
   return (
     <>
-    <Sidebar />
+      <Sidebar />
       <div className="navbar">
         <p className="bootleg"></p>
 
         <div className="links">
           <ul>
-            <li>{props.home ? <Link to="/">go back</Link> : <p></p>}</li>
+            <li>{props.home ? <Link to="/">go home</Link> : <p></p>}</li>
+            <li>{props.books ? <Link to="/books">books</Link> : <></>}</li>
             <li>
-              <Link to="/contact">contact</Link>
+              {props.contact ? <Link to="/contact">contact</Link> : <></>}
             </li>
-            {/* <li>
-              <Link to="/tools">tools</Link>
-            </li> */}
           </ul>
         </div>
       </div>

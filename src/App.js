@@ -9,12 +9,12 @@ function App() {
     "Howdy, fellow struggler. If you happen to spot any errors, specially about website responsiveness, you can reach me at misaelucas@gmail.com, i will be happy to know."
   );
 
-  const [isHome, setHome] = useState(false);
-
+  const isHome = false;
+  const contact = true;
+    const books = true;
   return (
     <div className="App">
-
-      <Header home={isHome} />
+      <Header home={isHome} contact={contact} books={books} />
       <Bio />
     </div>
   );

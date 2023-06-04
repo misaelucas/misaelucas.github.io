@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useTransition } from "react";
 import Header from "../components/Header";
 import "../css/Header.css";
 
 import "../css/Contact.css";
 import Sidebar from "../components/Sidebar";
-function Contact() {
-  const [isHome, setHome] = useState(true);
-
+function Contact( ) {
+  const isHome = true;
+  const contact = false;
+  const books = true;
   return (
     <>
-      <Header home={isHome} />
+      <Header home={isHome} contact={contact} books={books}/>
       <div className="container">
         <h2 className="">So, how to reach me?</h2>
         <div className="contact">
