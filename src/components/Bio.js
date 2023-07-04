@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "../css/Bio.css";
 import "../css/Slide.css";
 import duck from "../img/duck.gif";
+import { Link } from "react-router-dom";
 
 const Bio = () => {
   function getAge(dateString) {
@@ -35,18 +36,17 @@ const Bio = () => {
           about life.
         </p>
       </div>
+
       <div className="github-button">
         <button type="button" className="slide">
-          <div>
-            <a
-              href="https://github.com/misaelucas"
-              target="_blank"
-              rel="noreferrer"
-              className="github-link"
-            >
-              github
-            </a>
-          </div>
+          <a
+            href="https://github.com/misaelucas"
+            target="_blank"
+            rel="noreferrer"
+            className="github-link"
+          >
+            github
+          </a>
           <i className="icon-arrow-right"></i>
         </button>
       </div>
@@ -55,22 +55,34 @@ const Bio = () => {
         <div className="projects">
           <ul>
             <li>
-              <a href="https://centromedicohebrom.com.br" target="_blank">
+              <a
+                href="https://centromedicohebrom.com.br"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Centro Médico Hebrom
               </a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="https://github.com/misaelucas/baldersbra" target="_blank">
+              <a
+                href="https://github.com/misaelucas/baldersbra"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Baldersbra
               </a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="https://github.com/misaelucas/crud" target="_blank">
-                Express CRUD 
+              <a
+                href="https://github.com/misaelucas/crud"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Express CRUD
               </a>
             </li>
           </ul>

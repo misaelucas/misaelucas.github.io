@@ -14,6 +14,8 @@ function Header(props) {
         <div className="links">
           <ul>
             <li>{props.home ? <Link to="/">go home</Link> : <p></p>}</li>
+            <li>{props.blog ? <Link to="/blog">blog</Link> : <></>}</li>
+
             <li>{props.books ? <Link to="/books">books</Link> : <></>}</li>
             <li>
               {props.contact ? <Link to="/contact">contact</Link> : <></>}

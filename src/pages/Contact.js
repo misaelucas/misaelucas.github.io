@@ -8,9 +8,10 @@ function Contact( ) {
   const isHome = true;
   const contact = false;
   const books = true;
+  const blog = true;
   return (
     <>
-      <Header home={isHome} contact={contact} books={books}/>
+      <Header home={isHome} blog={blog} contact={contact} books={books}/>
       <div className="container">
         <h2 className="">So, how to reach me?</h2>
         <div className="contact">

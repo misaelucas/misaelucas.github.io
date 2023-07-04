@@ -11,10 +11,11 @@ function App() {
 
   const isHome = false;
   const contact = true;
-    const books = true;
+  const books = true;
+  const blog = true;
   return (
     <div className="App">
-      <Header home={isHome} contact={contact} books={books} />
+      <Header home={isHome} contact={contact} books={books} blog={blog} />
       <Bio />
     </div>
   );
