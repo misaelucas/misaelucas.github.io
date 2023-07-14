@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import "../css/Bio.css";
-import "../css/Slide.css";
-import duck from "../img/duck.gif";
-import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
 
 const Bio = () => {
+  const github = "https://github.com/misaelucas";
+
   function getAge(dateString) {
     const today = new Date();
     const birthDate = new Date(dateString);
@@ -19,39 +19,39 @@ const Bio = () => {
   const age = getAge("1998/09/22");
 
   return (
-    <div className="bio ">
-      <div>
-        <h1 className="title fadein">Hi, I’m Misa. </h1>
-      </div>
-      <div className="shenanigans fadein2">
-        <p>
+    <div className="bio flex mt-12 xl:mt-24 text-white justify-center flex-col">
+      <div className="flex flex-col w-3/4 xl:w-2/4 lg:w-2/4">
+        <div className="title wotfard-font font-bold text-5xl tracking-wider margin">
+          Hi, I’m Misa.
+        </div>
+        <div className="wotfard-font leading-6 text-base mt-4 tracking-wider margin ">
           I am {age} years old, currently studying fullstack development, i have
           done a few projects, you can check them at my github. I'm deeply
           interested in muay thai, stoicism and good poems.
-        </p>
-        <p>
+        </div>
+        <div className="wotfard-font tracking-wider mt-2  margin ">
           This is my personal page, feel free to browse through, here you will
           be able to find my portfolio, things that i like to think they are
           interesting, and the convergence of my considerations and perceptions
           about life.
-        </p>
-      </div>
-
-      <div className="github-button">
-        <button type="button" className="slide">
-          <a
-            href="https://github.com/misaelucas"
+        </div>
+        <div className="mt-4 wotfard-font margin ">
+          <Button
+            href={github}
             target="_blank"
             rel="noreferrer"
-            className="github-link"
+            variant="outlined"
+            className=""
+            size="large"
+            sx={{
+              width: 150,
+              fontFamily: "monospace",
+            }}
           >
-            github
-          </a>
-          <i className="icon-arrow-right"></i>
-        </button>
-      </div>
-      <div className="projects-container">
-        <div className="container-title">Projects</div>
+            Github
+          </Button>
+        </div>
+        <div className="projects">Projects</div>
         <div className="projects">
           <ul>
             <li>
@@ -88,11 +88,8 @@ const Bio = () => {
           </ul>
         </div>
       </div>
-      <img
-        src={duck}
-        alt="Gengar, haunter and gastly, three pokemons. A gif, they are laughing."
-        className="responsive fadein2"
-      />
+
+      <div className="projects-container"></div>
     </div>
   );
 };

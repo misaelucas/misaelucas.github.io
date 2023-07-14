@@ -9,7 +9,9 @@ const Blog = () => {
   return (
     <div>
       <Header home={isHome} contact={contact} books={books} />
-      <div className="flex bg-red-500 justify-center "></div>
+      <div className="flex bg-red-500 justify-center ">
+        Darude
+      </div>
     </div>
   );
 };

@@ -3,7 +3,7 @@
   width: 36px;
   height: 30px;
   top: 36px;
-  left: 15px;  
+  left: 15px;
 }
 
 .bm-burger-bars {
@@ -42,7 +42,6 @@
 }
 
 @media (max-width: 475px) {
- 
   .xD {
     display: inline-block;
     position: absolute;
@@ -59,8 +58,5 @@
     font-weight: 550;
     text-decoration: none;
     color: white;
-  
   }
-
-
 }
