@@ -2,7 +2,6 @@ import "./App.css";
 import Header from "./components/Header";
 import Bio from "./components/Bio";
 import React, { useState } from "react";
-import Sidebar from "./components/Sidebar";
 
 function App() {
   console.log(
@@ -14,7 +13,7 @@ function App() {
   const books = true;
   const blog = true;
   return (
-    <div className="App">
+    <div className="App fade-in">
       <Header home={isHome} contact={contact} books={books} blog={blog} />
       <Bio />
     </div>

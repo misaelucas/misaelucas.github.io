@@ -1,17 +1,14 @@
 import React, { useState, useTransition } from "react";
 import Header from "../components/Header";
-import "../css/Header.css";
-
 import "../css/Contact.css";
-import Sidebar from "../components/Sidebar";
-function Contact( ) {
+function Contact() {
   const isHome = true;
   const contact = false;
   const books = true;
   const blog = true;
   return (
     <>
-      <Header home={isHome} blog={blog} contact={contact} books={books}/>
+      <Header home={isHome} blog={blog} contact={contact} books={books} />
       <div className="container">
         <h2 className="">So, how to reach me?</h2>
         <div className="contact">
@@ -30,7 +27,6 @@ function Contact( ) {
                 rel="noreferrer"
                 className="mailbutton"
               >
-               
                 <div>Mail</div>
               </a>
             </div>

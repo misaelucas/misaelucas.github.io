@@ -5,37 +5,27 @@ import { Button } from "@mui/material";
 const Bio = () => {
   const github = "https://github.com/misaelucas";
 
-  function getAge(dateString) {
-    const today = new Date();
-    const birthDate = new Date(dateString);
-    let age = today.getFullYear() - birthDate.getFullYear();
-    let m = today.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-      age--;
-    }
-    return age;
-  }
-
-  const age = getAge("1998/09/22");
-
   return (
-    <div className="bio flex mt-12 xl:mt-24 text-white justify-center flex-col">
-      <div className="flex flex-col w-3/4 xl:w-2/4 lg:w-2/4">
-        <div className="title wotfard-font font-bold text-5xl tracking-wider margin">
+    <div className="bio  flex mt-12 xl:mt-24 text-white justify-center font-mono flex-col">
+      <div className="flex flex-col w-11/12 xl:w-2/4 ml-6 sm:w-11/12 lg:w-3/4 ml-8 sm:ml-12 md:ml-20 lg:ml-40">
+        <div className=" font-bold font-sans text-3xl sm:text-4xl md:text-4xl sm:-ml-4 lg:text-5xl tracking-wider">
           Hi, I’m Misa.
         </div>
-        <div className="wotfard-font leading-6 text-base mt-4 tracking-wider margin ">
-          I am {age} years old, currently studying fullstack development, i have
-          done a few projects, you can check them at my github. I'm deeply
-          interested in muay thai, stoicism and good poems.
+        <div className="text-xl leading-7 mt-4 tracking-tight p-1 w-11/12">
+          I am 24 years old, currently working with web development. I'm also
+          deeply interested in muay thai, stoicism and good poems.
         </div>
-        <div className="wotfard-font tracking-wider mt-2  margin ">
+        <div className="leading-7 text-xl mt-4 tracking-tight p-1 w-11/12">
           This is my personal page, feel free to browse through, here you will
           be able to find my portfolio, things that i like to think they are
           interesting, and the convergence of my considerations and perceptions
           about life.
         </div>
-        <div className="mt-4 wotfard-font margin ">
+        <div className="leading-7 text-xl mt-4  tracking-tight p-1 w-11/12">
+          For now, i mainly code being heavily dependent on React, Tailwindcss
+          and GPT-3. All my work is mobile-first driven.
+        </div>
+        <div className="mt-4">
           <Button
             href={github}
             target="_blank"
@@ -51,7 +41,16 @@ const Bio = () => {
             Github
           </Button>
         </div>
-        <div className="projects">Projects</div>
+        <div class="relative blur-opacity ">
+          <div
+            class="mb-1 text-2xl sm:text-4xl md:text-3xl sm:-ml-4 
+          lg:text-3xl font-bold mt-12 w-80 transition ease-in-out delay-150 
+          hover:-translate-y-1 hover:scale-110 duration-300"
+          >
+            My Work
+          </div>
+          <div class="absolute underline bottom-0 left-0 w-full h-0.5 bg-white "></div>
+        </div>
         <div className="projects">
           <ul>
             <li>

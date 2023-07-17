@@ -5,3 +5,16 @@ body {
   height: 100vh;
 }
 
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
