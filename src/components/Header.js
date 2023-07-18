@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Header(props) {
   return (
     <>
-      <div className="flex justify-between text-white font-mono mt-2">
+      <div className="flex justify-between fade-in-2s text-white font-mono mt-4">
         <div className="flex text-xl underline underline-offset-4">
           <div className="mx-2">
             {props.home ? (
@@ -12,7 +12,7 @@ function Header(props) {
                 to="/"
                 className="px-2 py-1 rounded relative overflow-hidden group"
               >
-                <span className="absolute left-0 top-0 w-full h-full bg-transparent group-hover:bg-green-500 transition-all duration-300"></span>
+                <span className="absolute left-0 top-0 w-full h-full bg-transparent group-hover:bg-pink-600 rounded-r transition-all duration-500"></span>
                 <span className="relative z-10">go home</span>
               </Link>
             ) : (
@@ -25,7 +25,7 @@ function Header(props) {
                 to="/blog"
                 className="px-2 py-1 rounded relative overflow-hidden group"
               >
-                <span className="absolute left-0 top-0 w-full h-full bg-transparent group-hover:bg-green-500 transition-all duration-300"></span>
+                <span className="absolute left-0 top-0 w-full h-full bg-transparent group-hover:bg-pink-600 rounded-r transition-all duration-500"></span>
                 <span className="relative z-10">blog</span>
               </Link>
             ) : (
@@ -38,7 +38,7 @@ function Header(props) {
                 to="/books"
                 className="px-2 py-1 rounded relative overflow-hidden group"
               >
-                <span className="absolute left-0 top-0 w-full h-full bg-transparent group-hover:bg-green-500 transition-all duration-300"></span>
+                <span className="absolute left-0 top-0 w-full h-full bg-transparent group-hover:bg-pink-600 rounded-r transition-all duration-500"></span>
                 <span className="relative z-10">books</span>
               </Link>
             ) : (
@@ -51,7 +51,7 @@ function Header(props) {
                 to="/contact"
                 className="px-2 py-1 rounded relative overflow-hidden group"
               >
-                <span className="absolute left-0 top-0 w-full h-full bg-transparent group-hover:bg-green-500 transition-all duration-300"></span>
+                <span className="absolute left-0 top-0 w-full h-full bg-transparent group-hover:bg-pink-600 rounded-r transition-all duration-500"></span>
                 <span className="relative z-10">contact</span>
               </Link>
             ) : (

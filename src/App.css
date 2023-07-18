@@ -1,4 +1,4 @@
-body { 
+body {
   margin: 0;
   padding: 0;
   background-color: #0f1117;
@@ -7,8 +7,21 @@ body {
 
 .fade-in {
   opacity: 0;
-  animation: fadeIn 2.5s ease-out forwards;
+  animation: fadeIn 4s ease-out forwards;
 }
+
+a {
+  text-decoration: underline;
+  color: blue;
+  transition: transform 0.5s;
+  display: inline-block;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+
 
 @keyframes fadeIn {
   from {
@@ -17,4 +30,34 @@ body {
   to {
     opacity: 1;
   }
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.rainbow {
+  background: linear-gradient(
+    to right,
+    #ff00ff,
+    #1aff1a,
+    #00ffff,
+    #ff00ff,
+    #1aff1a,
+    #00ffff,
+    #ff00ff
+  );
+  background-size: 600% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: rainbow 2s linear infinite;
 }

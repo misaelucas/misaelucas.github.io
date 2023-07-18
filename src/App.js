@@ -1,7 +1,8 @@
 import "./App.css";
 import Header from "./components/Header";
-import Bio from "./components/Bio";
 import React, { useState } from "react";
+import Projects from "./components/Projects.js";
+import MainPage from "./components/MainPage";
 
 function App() {
   console.log(
@@ -15,7 +16,7 @@ function App() {
   return (
     <div className="App fade-in">
       <Header home={isHome} contact={contact} books={books} blog={blog} />
-      <Bio />
+      <MainPage />
     </div>
   );
 }
