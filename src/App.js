@@ -14,7 +14,7 @@ function App() {
   const books = true;
   const blog = true;
   return (
-    <div className="App fade-in">
+    <div className="App fade-in overflow-hidden">
       <Header home={isHome} contact={contact} books={books} blog={blog} />
       <MainPage />
     </div>
