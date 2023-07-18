@@ -22,20 +22,20 @@ const Projects = () => {
       link: "https://centromedicohebrom.com.br",
     },
     {
-      name: "Express CRUD",
-      description:
-        "API RESTful básico com funcionalidade CRUD para gerenciar uma coleção de usuários.",
-      icon: <FaNodeJs />,
-      technologiesUsed: ["Node.js", "Express"],
-      link: "https://github.com/misaelucas/crud/",
-    },
-    {
       name: "Baldersbra",
       description:
         "Aplicação em React Native que calcula macros utilizando fórmulas científicas, ele determina a TMB do usuário e fornece as calorias necessárias para seu objetivo.",
       icon: <FaMobileAlt />,
       technologiesUsed: ["React Native", "Expo"],
       link: "https://github.com/misaelucas/baldersbra",
+    },
+    {
+      name: "Express CRUD",
+      description:
+        "API RESTful básico com funcionalidade CRUD para gerenciar uma coleção de usuários.",
+      icon: <FaNodeJs />,
+      technologiesUsed: ["Node.js", "Express"],
+      link: "https://github.com/misaelucas/crud/",
     },
   ];
 
