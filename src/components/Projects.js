@@ -77,7 +77,7 @@ const Projects = () => {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col text-white bg-gray-800 font-mono rounded-lg p-4 shadow-lg hover:bg-pink-700 transition duration-300 ease-in-out"
+            className="flex  flex-col text-white bg-gray-800 font-mono rounded-lg p-4 shadow-lg hover:bg-pink-700 transition duration-300 ease-in-out"
           >
             <h3 className="text-xl">{project.name}</h3>
             <p className="mt-2 font-mono">{project.description}</p>
