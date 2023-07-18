@@ -5,14 +5,15 @@ import { styled } from "@mui/material/styles";
 const EnlargeOnHoverButton = styled(Button)(({ theme }) => ({
   position: "relative",
   overflow: "hidden",
-  transition: "color 300ms ease, border-color 300ms ease",
+  transition: "transform 500ms ease-in-out",
   "&:hover": {
-    borderColor: "rgb(219 39 119)",
+    transform: "scale(1.1)",
+    borderColor: "rgb(219, 39, 119)",
   },
 }));
 
 function GitHubButton() {
-  const github = "https://github.com/example";
+  const github = "https://github.com/misaelucas";
 
   return (
     <EnlargeOnHoverButton
@@ -25,8 +26,8 @@ function GitHubButton() {
         width: 150,
         fontFamily: "monospace",
         fontSize: "1.10rem",
-        color: "rgb(219 39 119)",
-        borderColor: "rgb(219 39 119)",
+        color: "rgb(219, 39, 119)",
+        borderColor: "rgb(219, 39, 119)",
       }}
     >
       Github
