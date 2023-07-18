@@ -16,17 +16,17 @@ const MainPage = () => {
             <img src={Gengar} alt="" className="ml-2 self-end" />
           </div>
         </div>
-        <div className="text-xl leading-7 mt-4 tracking-tight p-1 lg:w-3/4">
+        <div className="text-xl leading-7 mt-4 tracking-tight px-4 lg:w-3/4">
           Tenho 24 anos, atualmente trabalho com desenvolvimento web. Também me
           interesso profundamente por muay thai, estoicismo e bons poemas.
         </div>
-        <div className="leading-7 text-xl mt-4 tracking-tight p-1 lg:w-3/4">
+        <div className="leading-7 text-xl mt-4 tracking-tight px-4 lg:w-3/4">
           Esta é minha página pessoal, fique à vontade para navegar, aqui você
           poderá encontrar meu portfólio, coisas que gosto de pensar que são
           interessantes, e a convergência de minhas considerações e percepções
           sobre a vida.
         </div>
-        <div className="leading-7 text-xl mt-4 tracking-tight p-1 lg:w-3/4">
+        <div className="leading-7 text-xl mt-4 tracking-tight px-4 lg:w-3/4">
           Por enquanto, eu desenvolvo dependendo fortemente de{" "}
           <a
             href="https://react.dev/"
@@ -58,7 +58,7 @@ const MainPage = () => {
           abordagem mobile first.
         </div>
 
-        <div className="mt-4 ">
+        <div className="mt-8 ">
           <GitHubButton />
         </div>
         <Projects />

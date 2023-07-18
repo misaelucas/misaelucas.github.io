@@ -81,14 +81,18 @@ const Projects = () => {
           >
             <h3 className="text-xl">{project.name}</h3>
             <p className="mt-2 font-mono">{project.description}</p>
-            <div className="mt-4 grid grid-cols-2 px-8 mx-4 gap-2">
+            <div className="mt-4 grid grid-cols-2 px-8 mx-2 gap-2">
               {project.technologiesUsed.map((technology, index) => (
                 <div
                   key={index}
                   className={`flex flex-col items-center justify-center w-full h-16 rounded-md ${technologyIcons[technology].bgClass}`}
                 >
                   {technologyIcons[technology].icon}
-                  <span className="text-white mt-1 text-xs">
+                  <span
+                    className={`text-white mt-1 text-xs ${
+                      technology === "TailwindCSS" ? "text-sm" : ""
+                    } ${technology === "React Native" ? "text-sm" : ""}`}
+                  >
                     {technologyIcons[technology].name}
                   </span>
                 </div>
