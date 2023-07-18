@@ -9,7 +9,7 @@ const MainPage = () => {
 
   return (
     <div className="bio flex mt-12 lg:mt-16 text-white justify-center font-mono flex-col">
-      <div className="flex flex-col ml-8 sm:ml-12 md:ml-20 lg:ml-40">
+      <div className="flex flex-col ml-8 sm:ml-12 md:ml-20 lg:ml-24">
         <div className="font-bold font-sans text-3xl sm:text-4xl md:text-4xl sm:-ml-4 lg:text-5xl tracking-wider">
           <div className="flex items-center">
             <span>Hi, I’m Misa.</span>
@@ -56,11 +56,11 @@ const MainPage = () => {
           </a>{" "}
           (ou talvez GPT-4 com guardrails?). Todo o meu trabalho é feito com uma
           abordagem mobile first.
+          <div className="mt-8">
+            <GitHubButton />
+          </div>
         </div>
 
-        <div className="mt-8 ">
-          <GitHubButton />
-        </div>
         <Projects />
         <Footer />
         {/* <div class="flex items-center justify-center w-56 h-56 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
