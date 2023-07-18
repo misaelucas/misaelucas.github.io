@@ -11,19 +11,14 @@ export const Footer = () => {
         <a href="https://leekspin.com/" className="rainbow mr-1">
           {projectName}
         </a>
-        <span
-          className="ml-1 nounder"
-        >
-          {" "}
-          -
-        </span>
+        <span className="ml-1 nounder text-white"> -</span>
         <Link
-          className="ml-2 m hover:text-pink-500"
+          className="ml-2 decoration-white hover:text-pink-500"
           to="https://github.com/misaelucas"
         >
           misa
         </Link>
-        <Link className="ml-2 text-xl" to="https://github.com/misaelucas/">
+        <Link className="ml-2 text-xl " to="https://github.com/misaelucas/">
           <BsGithub />
         </Link>
       </div>
