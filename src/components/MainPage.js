@@ -5,7 +5,6 @@ import Projects from "./Projects";
 import { Footer } from "./Footer";
 import Gengar from "../img/gengar.gif";
 const MainPage = () => {
-  const github = "https://github.com/misaelucas";
 
   return (
     <div className="bio flex mt-12 lg:mt-16 text-white justify-center font-mono flex-col">

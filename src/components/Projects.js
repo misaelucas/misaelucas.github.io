@@ -1,7 +1,12 @@
 import React from "react";
 import { FaNodeJs, FaReact, FaDatabase, FaMobileAlt } from "react-icons/fa";
 import { DiCss3 } from "react-icons/di";
-import { SiFirebase, SiTailwindcss, SiExpo, SiMaterialui } from "react-icons/si";
+import {
+  SiFirebase,
+  SiTailwindcss,
+  SiExpo,
+  SiMaterialui,
+} from "react-icons/si";
 
 const Projects = () => {
   const projects = [
@@ -82,7 +87,7 @@ const Projects = () => {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col text-white bg-gray-800 font-mono rounded-lg p-4 shadow-lg hover:bg-pink-700 transition duration-300 ease-in-out"
+            className="flex flex-col text-white bg-gray-800 font-mono rounded-lg p-4 shadow-lg hover:bg-pink-700 transition duration-300 ease-in-out transform-gpu hover:scale-105"
           >
             <h3 className="text-xl mb-2 md:mb-4">{project.name}</h3>
             <p className="mt-2 mb-4 flex-grow">{project.description}</p>
