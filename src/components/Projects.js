@@ -71,7 +71,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="flex flex-col gap-6 bg-cool-blue p-4 rounded-lg">
+    <div className="flex flex-col gap-6 bg-cool-blue p-4 -ml-2 rounded-lg">
       <div className="relative blur-opacity group">
         <div className="mb-1 text-2xl sm:text-4xl md:text-3xl sm:-ml-4 lg:text-3xl font-bold mt-12 w-80 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 text-white">
           My Work
