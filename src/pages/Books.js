@@ -1,13 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "../components/Header";
 import { Footer } from "../components/Footer";
 
 function Books() {
-  const [isHome, setHome] = useState(true);
-  const contact = true;
-  const books = false;
-  const blog = true;
-
   // Array of book objects
   const booksData = [
     {
@@ -29,15 +24,13 @@ function Books() {
 
       But he who understands this would from that moment be successful in all things, both those which are thought to be more important and those which are thought to be less; and whether he were to follow horse-racing or to devote himself to music or to agriculture, or if he should wish to be a general or to hold the other offices or to conduct the other public business in his city, he will do everything well and would make no mistakes in anything. However, without this understanding, while in each of his labours he might sometimes seem both to himself and to his neighbours to be successful — for instance, if as a farmer he were to be fortunate with his crops, or if he were to have more than ordinary acquaintance with the handling of horses, or if he were to have fairly good knowledge of music, or if in athletic contests he could overcome his competitors — still on the whole he would fail, since he would be working at these things to no good end nor in such a way as to derive benefit.
 
-      Therefore he is incapable of being prosperous, just as one cannot make a successful voyage if one does not know whither he is sailing, being carried along aimlessly on the sea, his ship at one moment sailing a straight course, should fortune so decree, but the next moment yawing, at one moment with the wind astern, the next with it dead ahead. Nay, just as with the lyre musicians first set the middle string and then tune the others to harmonize with that — otherwise they will never achieve any harmony at all — so with life, men should first come to understand best and then, having made this their goal, they should do everything else with reference to this; otherwise their life will be out of harmony and out of tune in all likelihood.`
+      Therefore he is incapable of being prosperous, just as one cannot make a successful voyage if one does not know whither he is sailing, being carried along aimlessly on the sea, his ship at one moment sailing a straight course, should fortune so decree, but the next moment yawing, at one moment with the wind astern, the next with it dead ahead. Nay, just as with the lyre musicians first set the middle string and then tune the others to harmonize with that — otherwise they will never achieve any harmony at all — so with life, men should first come to understand best and then, having made this their goal, they should do everything else with reference to this; otherwise their life will be out of harmony and out of tune in all likelihood.`,
     },
-    // Add more book objects if needed
   ];
 
   return (
     <>
-      <Header home={isHome} contact={contact} blog={blog} books={books} />
-
+      <Header />
       <div className="text-white font-mono mx-auto max-w-3xl mt-8">
         {booksData.map((book, index) => (
           <div
@@ -54,7 +47,6 @@ function Books() {
           </div>
         ))}
       </div>
-
       <Footer />
     </>
   );

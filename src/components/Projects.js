@@ -1,6 +1,5 @@
 import React from "react";
 import { FaNodeJs, FaReact, FaDatabase, FaMobileAlt } from "react-icons/fa";
-import { DiCss3 } from "react-icons/di";
 import {
   SiFirebase,
   SiTailwindcss,
@@ -44,7 +43,6 @@ const Projects = () => {
     },
   ];
 
-  // Mapping object for technology icons
   const technologyIcons = {
     React: { icon: <FaReact />, bgClass: "bg-blue-500", name: "React" },
     Firebase: {
