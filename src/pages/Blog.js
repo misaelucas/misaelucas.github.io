@@ -1,53 +1,71 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/Header";
-import { useState } from "react";
+import { Footer } from "../components/Footer";
+import ChipTheCup from "../posts/ChipTheCup";
 
 const Blog = () => {
-  const [isHome, setHome] = useState(true);
+  const [isHome] = useState(true);
   const contact = true;
   const books = true;
 
   const blogPosts = [
     {
       id: 1,
-      date: "14 de Julho",
-      content: (
-        <div className="font-mono">
-          <p className="mb-4 mt-2 text-lg">
-            Nos últimos meses eu tenho investido a maior parte do tempo (tentando) cuidar da minha saúde mental, entre eiras e beiras, conquistei estabilidade suficiente para amar minhas idiossincrasias, depois de tanto tempo.. !!!!
-          </p>
-
-          <p className="mb-4 mt-2 text-lg">
-            Imagino que a ideia de referências seja um tanto boba, pois todo escritor decente preza exclusivamente pela emoção, pela experiência, pelo correlato objetivo. Ainda tô tentando abandonar minha vaidade intelectual (COITADOOOO), mas é um negócio difícil assimilar a sabedoria "não só na memória, senão nos olhos, no coração, no estômago." Esse aqui vale referenciar, o livro me ajudou muito - Siddharta, de Hermann Hesse.
-          </p>
-
-          <p className="mb-4 mt-2 text-lg">
-            Diariamente, estou gastando quase que meu dia inteiro programando p/ fazer o deploy de um projeto grande, mas daí hoje vi uma notícia que me deu vontade de voltar a escrever. Fui refatorar meu site pessoal (que não tem nada kkk) para criar um blog e falar sobre esse negócio que rolou na UFSC (meu coração se encheu de animosidade, há anos eu não assisto TV ou mídia tradicional e sou extremamente leigo politicamente, + penso que um amplo entendimento da natureza humana em harmonia c/ um repertório filosófico é suficiente p/ tratar de um espectro enorme desses assuntos) e dei até risada de como meu código era ruim. Fico feliz de perceber o progresso. Tô refatorando ele, e vou fazer um texto desses assuntos aí. Daí: deu vontade de escrever, fui refatorar o código, lembrei que ia esquecer se não anotasse, esqueci os assuntos importantes, kkkkkk. É só uma catarse, e pros meus amigos, não é hipomania não, nem outros negocinhos. Dei uma limpada no meu instagram, é muito zoada a forma como isso aqui é usado majoritariamente.
-          </p>
-
-          <p className="mb-4 mt-2 text-lg">
-            "Ocasionalmente, deixo cair uma xícara de chá para quebrar no chão de propósito. Não fico satisfeito quando não se recompõe. Algum dia, talvez, aquela xícara retornará"
-          </p>
-
-          <p className="mb-4 mt-2 text-lg font-bold">
-            A tua vida inspira outras vidas.
-          </p>
-        </div>
-      ),
+      date: "14 de Julho de 2023",
+      title: "Chip the Cup",
+      content: <ChipTheCup />,
     },
   ];
 
+  const [expandedPostId, setExpandedPostId] = useState(null);
+
+  const handlePostClick = (postId) => {
+    if (postId === expandedPostId) {
+      setExpandedPostId(null);
+    } else {
+      setExpandedPostId(postId);
+    }
+  };
+
   return (
-    <div>
+    <div className="fade-in">
       <Header home={isHome} contact={contact} books={books} />
-      <div className="flex justify-center">
-        {blogPosts.map((post) => (
-          <div key={post.id} className="text-center max-w-2xl mx-auto p-4 text-white">
-            <h3 className="text-2xl font-bold mb-2">{post.date}</h3>
-            {post.content}
-          </div>
-        ))}
+      <div className="flex justify-center flex-wrap text-center text-xl md:text-xl lg:text-2xl xl:text-3xl font-bold mb-4 text-white">
+        Creed Thoughts
       </div>
+      <div className="flex justify-start">
+        <div className="w-full mx-auto">
+          <div className="max-w-3xl mx-auto ml-12">
+            <h2 className="text-2xl md:text-3xl lg:text-2xl xl:text-3xl font-bold mb-4 text-white">
+              Blog Posts
+            </h2>
+            {blogPosts.map((post) => (
+              <div
+                key={post.id}
+                className={`p-4 my-2 bg-gray-800 rounded-lg cursor-pointer ${
+                  expandedPostId === post.id
+                    ? "w-full -ml-5 sm:-ml-0"
+                    : "w-11/12 "
+                }`}
+                onClick={() => handlePostClick(post.id)}
+              >
+                <div className="flex justify-between items-center">
+                  <h3 className="text-xl text-sky-400 lg:text-2xl xl:text-2xl font-bold mb-2 text-white">
+                    {post.title}
+                  </h3>
+                  <p className="text-gray-400 font-mono !text-white">
+                    {post.date}
+                  </p>
+                </div>
+                {expandedPostId === post.id && (
+                  <div className="mt-4 text-white ">{post.content}</div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };

@@ -1,25 +1,17 @@
 import React from "react";
 import { FaNodeJs, FaReact, FaDatabase, FaMobileAlt } from "react-icons/fa";
 import { DiCss3 } from "react-icons/di";
-import { SiFirebase, SiTailwindcss, SiExpo } from "react-icons/si";
+import { SiFirebase, SiTailwindcss, SiExpo, SiMaterialui } from "react-icons/si";
 
 const Projects = () => {
   const projects = [
     {
       name: "Anabolic Archives",
       description:
-        "Um banco de dados para protocolos estéticos, aplicação fullstack, em desenvolvimento. React, Tailwindcss e Firebase.",
+        "Uma aplicação onde usuários podem criar protocolos estéticos e filtrar de acordo com os próprios parâmetros. Fullstack, em desenvolvimento.",
       icon: <FaDatabase />,
-      technologiesUsed: ["React", "TailwindCSS", "Firebase"],
+      technologiesUsed: ["React", "TailwindCSS", "Firebase", "Material-UI"],
       link: "https://github.com/misaelucas/anabolica",
-    },
-    {
-      name: "Centro Médico Hebrom",
-      description:
-        "Clínica médica, Single Page Application feita com React e Tailwindcss.",
-      icon: <FaReact />,
-      technologiesUsed: ["React", "TailwindCSS"],
-      link: "https://centromedicohebrom.com.br",
     },
     {
       name: "Baldersbra",
@@ -28,6 +20,14 @@ const Projects = () => {
       icon: <FaMobileAlt />,
       technologiesUsed: ["React Native", "Expo"],
       link: "https://github.com/misaelucas/baldersbra",
+    },
+    {
+      name: "Centro Médico Hebrom",
+      description:
+        "Clínica médica, Single Page Application intuitiva, UI/UX focado em levar o usuário a agendar consultas.",
+      icon: <FaReact />,
+      technologiesUsed: ["React", "TailwindCSS"],
+      link: "https://centromedicohebrom.com.br",
     },
     {
       name: "Express CRUD",
@@ -59,6 +59,11 @@ const Projects = () => {
       name: "React Native",
     },
     Expo: { icon: <SiExpo />, bgClass: "bg-purple-600", name: "Expo" },
+    "Material-UI": {
+      icon: <SiMaterialui />,
+      bgClass: "bg-indigo-500",
+      name: "Material-UI",
+    },
     Express: { icon: <FaNodeJs />, bgClass: "bg-gray-900", name: "Express" },
   };
 
@@ -70,29 +75,25 @@ const Projects = () => {
         </div>
         <div className="absolute underline bottom-0 left-0 w-full h-0.5 bg-white group-hover:bg-gray-300 transition-colors duration-300"></div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         {projects.map((project, index) => (
           <a
             key={index}
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex  flex-col text-white bg-gray-800 font-mono rounded-lg p-4 shadow-lg hover:bg-pink-700 transition duration-300 ease-in-out"
+            className="flex flex-col text-white bg-gray-800 font-mono rounded-lg p-4 shadow-lg hover:bg-pink-700 transition duration-300 ease-in-out"
           >
-            <h3 className="text-xl">{project.name}</h3>
-            <p className="mt-2 font-mono">{project.description}</p>
-            <div className="mt-4 grid grid-cols-2 px-8 mx-2 gap-2">
+            <h3 className="text-xl mb-2 md:mb-4">{project.name}</h3>
+            <p className="mt-2 mb-4 flex-grow">{project.description}</p>
+            <div className="mt-4 grid grid-cols-2 gap-2">
               {project.technologiesUsed.map((technology, index) => (
                 <div
                   key={index}
-                  className={`flex flex-col items-center justify-center w-full h-16 rounded-md ${technologyIcons[technology].bgClass}`}
+                  className={`flex items-center justify-center h-10 md:h-12 rounded-md ${technologyIcons[technology].bgClass}`}
                 >
                   {technologyIcons[technology].icon}
-                  <span
-                    className={`text-white mt-1 text-xs ${
-                      technology === "TailwindCSS" ? "text-sm" : ""
-                    } ${technology === "React Native" ? "text-sm" : ""}`}
-                  >
+                  <span className="text-white text-xs ml-1">
                     {technologyIcons[technology].name}
                   </span>
                 </div>
