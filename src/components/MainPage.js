@@ -5,7 +5,6 @@ import Projects from "./Projects";
 import { Footer } from "./Footer";
 import Gengar from "../img/gengar.gif";
 const MainPage = () => {
-
   return (
     <div className="bio flex mt-12 lg:mt-16 text-white justify-center font-mono flex-col">
       <div className="flex flex-col ml-8 sm:ml-12 md:ml-20 lg:ml-24">
@@ -59,8 +58,9 @@ const MainPage = () => {
             <GitHubButton />
           </div>
         </div>
-
-        <Projects />
+        <div className="mr-2 -ml-2 ">
+          <Projects />
+        </div>
         <Footer />
         {/* <div class="flex items-center justify-center w-56 h-56 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
           <div class="px-3 py-1 text-xs font-medium leading-none text-center text-blue-800 bg-blue-200 rounded-full animate-pulse dark:bg-blue-900 dark:text-blue-200">
