@@ -16,7 +16,7 @@ function Header() {
               src={homegengar}
               alt="Home"
               className="relative z-10"
-              style={{ width: "50px", height: "36px" }}
+              style={{ width: "50px", height: "40px" }}
             />
           </Link>
         </div>
