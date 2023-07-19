@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Footer } from "../components/Footer";
 import CuteGengarWithAsh from "../img/meandgengar.gif";
 import Header from "../components/Header";
-import { FaLinkedin, FaTwitter, FaDiscord, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaDiscord, FaEnvelope } from "react-icons/fa";
 import "../css/contact.css";
 
 function Contact() {
@@ -43,14 +43,7 @@ function Contact() {
                 >
                   <FaLinkedin />
                 </a>
-                <a
-                  href="https://twitter.com/misaelucas22"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-4xl text-white hover:text-blue-400 transition-colors"
-                >
-                  <FaTwitter />
-                </a>
+
                 <a
                   href="https://discordapp.com/users/271460156083142656"
                   target="_blank"
