@@ -39,9 +39,9 @@ const Blog = () => {
               {blogPosts.map((post) => (
                 <div
                   key={post.id}
-                  className={`p-4 my-2 bg-gray-800 rounded-lg cursor-pointer ${
+                  className={`p-4 my-2 bg-gray-700 hover:bg-gray-800 duration-500 rounded-lg cursor-pointer ${
                     expandedPostId === post.id
-                      ? "w-full -ml-5 sm:-ml-0"
+                      ? "w-full -ml-5 sm:-ml-0 bg-gray-800"
                       : "w-11/12 "
                   }`}
                   onClick={() => handlePostClick(post.id)}

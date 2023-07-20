@@ -12,11 +12,10 @@ function Contact() {
   useEffect(() => {
     const timer1 = setTimeout(() => {
       setShowImage(false);
-    }, 1500); // Adjust the delay in milliseconds before hiding the image
-
+    }, 1500);
     const timer2 = setTimeout(() => {
       setShowContent(true);
-    }, 1000); // Adjust the delay in milliseconds before showing the content
+    }, 1000);
 
     return () => {
       clearTimeout(timer1);

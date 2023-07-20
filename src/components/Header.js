@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import  homegengar  from "../img/homegengar.png";
+import homegengar from "../img/homegengar.png";
 
 function Header() {
   return (
@@ -31,11 +31,11 @@ function Header() {
         </div>
         <div className="mx-2">
           <Link
-            to="/books"
+            to="/dion"
             className="px-2 py-1 rounded relative overflow-hidden group"
           >
             <span className="absolute left-0 top-0 w-full h-full bg-transparent group-hover:bg-pink-600 rounded-r transition-all duration-500"></span>
-            <span className="relative z-10">books</span>
+            <span className="relative z-10">dion</span>
           </Link>
         </div>
         <div className="mx-2 ml-4">

@@ -25,9 +25,9 @@ const ChipTheCup = () => {
           Diariamente, estou gastando quase que meu dia inteiro programando p/
           fazer o deploy de um projeto grande, mas daí hoje vi uma notícia que
           me deu vontade de voltar a escrever. Fui refatorar meu site pessoal
-          (que não tem nada kkk) para criar um blog e falar sobre esse negócio
-          que rolou na UFSC (meu coração se encheu de animosidade, há anos eu
-          não assisto TV ou mídia tradicional e sou extremamente leigo
+          (que não tem quase nada kkk) para criar um blog e falar sobre esse
+          negócio que rolou na UFSC (meu coração se encheu de animosidade, há
+          anos eu não assisto TV ou mídia tradicional e sou extremamente leigo
           politicamente, + penso que um amplo entendimento da natureza humana em
           harmonia c/ um repertório filosófico é suficiente p/ tratar de um
           espectro enorme desses assuntos) e dei até risada de como meu código
@@ -35,9 +35,8 @@ const ChipTheCup = () => {
           vou fazer um texto desses assuntos aí. Daí: deu vontade de escrever,
           fui refatorar o código, lembrei que ia esquecer se não anotasse,
           esqueci os assuntos importantes, kkkkkk. É só uma catarse, e pros meus
-          amigos, não é hipomania não, nem outros negocinhos. Dei uma limpada no
-          meu instagram, é muito zoada a forma como isso aqui é usado
-          majoritariamente.
+          amigos, não é hipomania não. Dei uma limpada no meu instagram, é muito
+          zoada a forma como isso aqui é usado majoritariamente.
         </p>
 
         <p className="mb-4 mt-2 text-lg">
