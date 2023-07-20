@@ -15,7 +15,7 @@ function Dion() {
   return (
     <>
       <Header />
-      <div className="text-white font-mono mx-auto max-w-3xl mt-8">
+      <div className="text-white font-mono mx-auto max-w-3xl fade-in mt-8">
         {booksData.map((book, index) => (
           <div
             key={index}
