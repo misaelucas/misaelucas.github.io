@@ -53,7 +53,7 @@ const MainPage = () => {
             GPT-3
           </a>{" "}
           (ou talvez GPT-4 com guardrails?). Todo o meu trabalho é feito com uma
-          abordagem mobile first.
+          abordagem mobile first e design minimalista.
           <div className="mt-8">
             <GitHubButton />
           </div>
