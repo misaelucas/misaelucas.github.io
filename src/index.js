@@ -5,7 +5,7 @@ import "./index.css";
 
 import "./App.css";
 import Contact from "./pages/Contact";
-import Dion from "./pages/Dion";
+import Literature from "./pages/Literature";
 import Blog from "./pages/Blog";
 
 // import your route components too
@@ -16,7 +16,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/dion" element={<Dion />} />
+      <Route path="/literature" element={<Literature />} />
       <Route path="/blog" element={<Blog />} />
     </Routes>
   </BrowserRouter>
