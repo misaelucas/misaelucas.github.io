@@ -46,14 +46,16 @@ const MainPage = () => {
           {" e "}
           <a
             href="https://openai.com/"
-            className="underline text-pink-500"
+            className="underline text-yellow-500"
             target="_blank"
             rel="noopener noreferrer"
           >
-            GPT-3
+            Firebase.
           </a>{" "}
-          (ou talvez GPT-4 com guardrails?). Todo o meu trabalho é feito com uma
-          abordagem mobile first e design minimalista.
+          <p className="mt-1  ">
+            Todo o meu trabalho é feito com uma abordagem mobile first e design
+            minimalista.
+          </p>
           <div className="mt-8">
             <GitHubButton />
           </div>
