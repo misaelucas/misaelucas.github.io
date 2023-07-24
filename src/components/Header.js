@@ -31,11 +31,11 @@ function Header() {
         </div>
         <div className="mx-2">
           <Link
-            to="/dion"
+            to="/literature"
             className="px-2 py-1 rounded relative overflow-hidden group"
           >
             <span className="absolute left-0 top-0 w-full h-full bg-transparent group-hover:bg-pink-600 rounded-r transition-all duration-500"></span>
-            <span className="relative z-10">dion</span>
+            <span className="relative z-10">literature</span>
           </Link>
         </div>
         <div className="mx-2 ml-4">
