@@ -1,0 +1,22 @@
+.blur-opacity .underline {
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.blur-opacity:hover .underline {
+  filter: blur(5px);
+  opacity: 0.5;
+}
+.enlarge-on-hover {
+  transition: transform 700ms ease 200ms;
+}
+
+.enlarge-on-hover:hover {
+  transform: scale(1.2);
+}
+
+.bio .font-sans img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 1em;
+  margin-bottom: 12px;
+}
