@@ -1,6 +1,4 @@
-import { useState, useEffect } from "react";
 import { Footer } from "../components/Footer";
-import CuteGengarWithAsh from "../assets/img/meandgengar.gif";
 import Header from "../components/Header";
 import { FaLinkedin, FaDiscord, FaEnvelope } from "react-icons/fa";
 import "../assets/css/contact.css";
