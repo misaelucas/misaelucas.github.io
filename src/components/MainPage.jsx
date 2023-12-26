@@ -4,6 +4,15 @@ import Projects from "./Projects";
 import { Footer } from "./Footer";
 import Gengar from "../assets/img/gengar.gif";
 const MainPage = () => {
+
+  function calculateAge(birthYear, birthMonth, birthDay) {
+    const today = new Date();
+    const birthDate = new Date(birthYear, birthMonth - 1, birthDay);
+    return today.getFullYear() - birthDate.getFullYear() - (today < birthDate);
+  }
+
+  const age = calculateAge(1998, 9, 22);
+
   return (
     <div className="bio flex mt-12 lg:mt-16 text-white justify-center font-mono flex-col">
       <div className="flex flex-col ml-8 sm:ml-12 md:ml-20 lg:ml-24">
@@ -14,17 +23,10 @@ const MainPage = () => {
           </div>
         </div>
         <div className="text-xl leading-7 mt-4 tracking-tight px-5 lg:w-3/4">
-          Tenho 24 anos, atualmente trabalho com desenvolvimento web. Também me
-          interesso profundamente por muay thai, estoicismo e bons poemas.
+          I am {age} years old, currently working with web developement. This is my my own personal space, feel free to browse through, here you will find my projects, things i might find interesting to share and a bit of literature. =)
         </div>
         <div className="leading-7 text-xl mt-4 tracking-tight px-5 lg:w-3/4">
-          Esta é minha página pessoal, fique à vontade para navegar, aqui você
-          poderá encontrar meu portfólio, coisas que gosto de pensar que são
-          interessantes, e a convergência de minhas considerações e percepções
-          sobre a vida.
-        </div>
-        <div className="leading-7 text-xl mt-4 tracking-tight px-5 lg:w-3/4">
-          Por enquanto, eu desenvolvo dependendo fortemente de{" "}
+          Currently, i develop mostly using{" "}
           <a
             href="https://react.dev/"
             className="underline text-blue-500 "
@@ -40,21 +42,19 @@ const MainPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Tailwind CSS
+            Tailwindcss
           </a>
-          {" e "}
+          {" and "}
           <a
             href="https://openai.com/"
-            className="underline text-yellow-500"
+            className="text-green-500 underline"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Firebase.
+            Nodejs.
           </a>{" "}
-          <p className="mt-1  ">
-            Todo o meu trabalho é feito com uma abordagem mobile first e design
-            minimalista.
-          </p>
+          All my work is made with a mobile first approach and minimalist design.
+
           <div className="mt-8">
             <GitHubButton />
           </div>
