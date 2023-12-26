@@ -19,7 +19,7 @@ function Header() {
             />
           </Link>
         </div>
-        <div className="mx-2">
+        {/* <div className="mx-2">
           <Link
             to="/literature"
             className="px-2 py-1 rounded relative overflow-hidden group"
@@ -27,7 +27,7 @@ function Header() {
             <span className="absolute left-0 top-0 w-full h-full bg-transparent group-hover:bg-pink-600 rounded-r transition-all duration-500"></span>
             <span className="relative z-10">literature</span>
           </Link>
-        </div>
+        </div> */}
         <div className="mx-2 ml-4">
           <Link
             to="/contact"
