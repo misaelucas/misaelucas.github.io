@@ -22,15 +22,15 @@ const Projects = () => {
     {
       name: "Anabolic Archives",
       description:
-        "Uma aplicação onde usuários podem criar protocolos estéticos e filtrar de acordo com os próprios parâmetros. Fullstack, em desenvolvimento.",
+        "An application where users can create fitness protocols and filter according to their own parameters.",
       icon: <FaDatabase />,
       technologiesUsed: ["React", "TailwindCSS", "Firebase", "Material-UI"],
       link: "https://github.com/misaelucas/anabolica",
     },
     {
-      name: "Baldersbra",
+      name: "Baldursbrá",
       description:
-        "Aplicação em React Native que calcula macros utilizando fórmulas científicas, ele determina a TMB do usuário e fornece as calorias necessárias para seu objetivo.",
+        "A simple macro calculator.",
       icon: <FaMobileAlt />,
       technologiesUsed: ["React Native", "Expo"],
       link: "https://github.com/misaelucas/baldersbra",
@@ -38,7 +38,7 @@ const Projects = () => {
     {
       name: "Centro Médico Hebrom",
       description:
-        "Clínica médica, Single Page Application intuitiva, UI/UX focado em levar o usuário a agendar consultas.",
+        "Medical clinic website, SPA made with React and Tailwindcss.",
       icon: <FaReact />,
       technologiesUsed: ["React", "TailwindCSS"],
       link: "https://centromedicohebrom.com.br",
@@ -46,7 +46,7 @@ const Projects = () => {
     {
       name: "Express CRUD",
       description:
-        "API RESTful básico com funcionalidade CRUD para gerenciar uma coleção de usuários.",
+        "Basic RESTful API where one can manage a collection of users.",
       icon: <FaNodeJs />,
       technologiesUsed: ["Node.js", "Express"],
       link: "https://github.com/misaelucas/crud/",
