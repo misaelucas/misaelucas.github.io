@@ -6,9 +6,19 @@ import Gengar from "../assets/img/gengar.gif";
 const MainPage = () => {
 
   function calculateAge(birthYear, birthMonth, birthDay) {
-    const today = new Date();
     const birthDate = new Date(birthYear, birthMonth - 1, birthDay);
-    return today.getFullYear() - birthDate.getFullYear() - (today < birthDate);
+    const today = new Date();
+
+    let age = today.getFullYear() - birthDate.getFullYear();
+
+    if (
+      today.getMonth() < birthDate.getMonth() ||
+      (today.getMonth() === birthDate.getMonth() && today.getDate() < birthDate.getDate())
+    ) {
+      age--;
+    }
+
+    return age;
   }
 
   const age = calculateAge(1998, 9, 22);
