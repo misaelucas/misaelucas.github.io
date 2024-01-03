@@ -2,18 +2,19 @@ import { Footer } from "../components/Footer";
 import Header from "../components/Header";
 import { FaLinkedin, FaDiscord, FaEnvelope } from "react-icons/fa";
 import "../assets/css/contact.css";
+import misamisa from "../assets/img/misamisa.gif";
 
 function Contact() {
-
-
   return (
     <div className="contact-container">
       <Header />
       <div className="content-container">
+        <img
+          src={misamisa}
+          className="w-2/4 sm:w-2/4  md:w-1/3 lg:w-1/5  rounded-full -mt-8 my-8"
+          alt="Misamisa"
+        />
         <div className="text-center">
-          <div className="text-xl text-white -mt-20 sm:text-2xl md:text-3xl font-bold mb-4">
-            Olá, você pode falar comigo por aqui:
-          </div>
           <div className="flex justify-center space-x-2 sm:space-x-4">
             <a
               href="https://www.linkedin.com/in/misael-lucas/"
@@ -23,7 +24,6 @@ function Contact() {
             >
               <FaLinkedin />
             </a>
-
             <a
               href="https://discordapp.com/users/271460156083142656"
               target="_blank"
