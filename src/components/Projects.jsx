@@ -1,4 +1,4 @@
-import { FaNodeJs, FaReact, FaDatabase, FaMobileAlt } from "react-icons/fa";
+import { FaNodeJs, FaReact, FaDatabase, FaMobileAlt, FaPython } from "react-icons/fa";
 import { SiFirebase, SiTailwindcss, SiExpo } from "react-icons/si";
 
 const materialUiSvg = (
@@ -27,29 +27,22 @@ const Projects = () => {
       technologiesUsed: ["React", "TailwindCSS", "Firebase", "Material-UI"],
       link: "https://github.com/misaelucas/anabolica",
     },
-    {
-      name: "Baldursbrá",
-      description:
-        "A simple macro calculator.",
-      icon: <FaMobileAlt />,
-      technologiesUsed: ["React Native", "Expo"],
-      link: "https://github.com/misaelucas/baldersbra",
-    },
+
     {
       name: "Centro Médico Hebrom",
       description:
         "Medical clinic website, SPA made with React and Tailwindcss.",
       icon: <FaReact />,
       technologiesUsed: ["React", "TailwindCSS"],
-      link: "https://centromedicohebrom.com.br",
+      link: "https://hebrom.pages.dev/",
     },
     {
-      name: "Express CRUD",
+      name: "HnH Server Checker",
       description:
-        "Basic RESTful API where one can manage a collection of users.",
-      icon: <FaNodeJs />,
-      technologiesUsed: ["Node.js", "Express"],
-      link: "https://github.com/misaelucas/crud/",
+        "HnH Server Checker is a Python script utilizing web scraping with BeautifulSoup to monitor the real-time status of the Haven and Hearth game server from an online URL.",
+      icon: <FaPython />,
+      technologiesUsed: ["Python"],
+      link: "https://github.com/misaelucas/HnH-Server-Checker",
     },
   ];
 
@@ -78,6 +71,7 @@ const Projects = () => {
       name: "Material-UI",
     },
     Express: { icon: <FaNodeJs />, bgClass: "bg-gray-900", name: "Express" },
+    Python: { icon: <FaPython />, bgClass: "bg-yellow-500", name: "Python" },
   };
 
   return (
