@@ -1,6 +1,6 @@
 const DionSixtyEighth = () => {
   return (
-    <div className="flex flex-col font-bold text-justify p-4 sm:p-2 lg:p-1 xl:p-0 ">
+    <div className="flex flex-col text-justify p-4 sm:p-2 lg:p-1 xl:p-0 ">
       <p className="mt-3">
         A maioria dos homens em todas as suas buscas e interesses os segue em
         total ignorância sobre qual é a natureza de cada um ou mesmo qual é o
