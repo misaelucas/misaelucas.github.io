@@ -3,24 +3,9 @@ import GitHubButton from "./GitHubButton";
 import Projects from "./Projects";
 import { Footer } from "./Footer";
 import Gengar from "../assets/img/gengar.gif";
+import { calculateAge } from "../utils/CalculateAge"; // Assume calculateAge is moved to a utility file
+
 const MainPage = () => {
-
-  function calculateAge(birthYear, birthMonth, birthDay) {
-    const birthDate = new Date(birthYear, birthMonth - 1, birthDay);
-    const today = new Date();
-
-    let age = today.getFullYear() - birthDate.getFullYear();
-
-    if (
-      today.getMonth() < birthDate.getMonth() ||
-      (today.getMonth() === birthDate.getMonth() && today.getDate() < birthDate.getDate())
-    ) {
-      age--;
-    }
-
-    return age;
-  }
-
   const age = calculateAge(1998, 9, 22);
 
   return (
@@ -29,19 +14,26 @@ const MainPage = () => {
         <div className="font-bold font-sans text-3xl sm:text-4xl md:text-4xl sm:-ml-4 lg:text-5xl tracking-wider">
           <div className="flex items-center">
             <span>Hi, I’m Misa.</span>
-            <img src={Gengar} alt="" className="ml-2 self-end" />
+            <img
+              src={Gengar}
+              alt="Gengar animation"
+              className="ml-2 self-end"
+            />
           </div>
         </div>
         <div className="text-xl leading-7 mt-4 tracking-tight px-5 lg:w-3/4">
-          I am {age} years old, currently working with web developement. This is my my own personal space, feel free to browse through, here you will find my projects, things i might find interesting to share and a bit of literature. =)
+          I am {age} years old, an IT Analyst. This is my personal space; feel
+          free to browse through it. Here you will find my projects, things I
+          find interesting to share, and a bit of literature. 😊
         </div>
         <div className="leading-7 text-xl mt-4 tracking-tight px-5 lg:w-3/4">
-          Currently, i develop mostly using{" "}
+          Currently, I mostly develop using{" "}
           <a
             href="https://react.dev/"
             className="underline text-blue-500 "
             target="_blank"
             rel="noopener noreferrer"
+            title="Learn more about React"
           >
             React
           </a>
@@ -51,28 +43,28 @@ const MainPage = () => {
             className="underline text-sky-500"
             target="_blank"
             rel="noopener noreferrer"
+            title="Learn more about Tailwind CSS"
           >
-            Tailwindcss
+            Tailwind CSS
           </a>
           {" and "}
           <a
-            href="https://openai.com/"
+            href="https://nodejs.org/en"
             className="text-green-500 underline"
             target="_blank"
             rel="noopener noreferrer"
+            title="Learn more about Node.js"
           >
-            Nodejs.
-          </a>{" "}
-          All my work is made with a mobile first approach and minimalist design.
-
-          <div className="mt-8">
-            <GitHubButton />
-          </div>
+            Node.js
+          </a>
+          . All my work is created with a mobile-first approach and minimalist
+          design, or perhaps, this is just an excuse to be lazy... ;P
         </div>
-        <div className="mr-2 -ml-2 ">
+        <div className="flex flex-col mt-8">
+          <GitHubButton />
           <Projects />
+          <Footer />
         </div>
-        <Footer />
       </div>
     </div>
   );
