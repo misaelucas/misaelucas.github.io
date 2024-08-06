@@ -24,7 +24,7 @@ const MainPage = () => {
         <div className="text-xl leading-7 mt-4 tracking-tight px-5 lg:w-3/4">
           I am {age} years old, an IT Analyst. This is my personal space; feel
           free to browse through it. Here you will find my projects, things I
-          find interesting to share, and a bit of literature. 😊
+          find interesting to share, and perhaps a little bit of literature in my blog page. 
         </div>
         <div className="leading-7 text-xl mt-4 tracking-tight px-5 lg:w-3/4">
           Currently, I mostly develop using{" "}
@@ -58,7 +58,7 @@ const MainPage = () => {
             Node.js
           </a>
           . All my work is created with a mobile-first approach and minimalist
-          design, or perhaps, this is just an excuse to be lazy... ;P
+          design.
         </div>
         <div className="flex flex-col mt-8">
           <GitHubButton />
