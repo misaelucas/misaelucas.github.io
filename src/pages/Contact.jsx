@@ -1,4 +1,4 @@
-import { Footer } from "../components/Footer";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { FaLinkedin, FaDiscord, FaEnvelope } from "react-icons/fa";
 import "../assets/css/contact.css";
@@ -11,7 +11,7 @@ function Contact() {
       <div className="content-container">
         <img
           src={misamisa}
-          className="w-2/4 sm:w-2/4  md:w-1/3 lg:w-1/5  rounded-full -mt-8 my-8"
+          className="w-2/4 sm:w-2/4  md:w-1/3 lg:w-1/6  rounded-full -mt-8 my-8"
           alt="Misamisa"
         />
         <div className="text-center">
@@ -25,7 +25,7 @@ function Contact() {
               <FaLinkedin />
             </a>
             <a
-              href="https://discordapp.com/users/271460156083142656"
+              href="https://discordapp.com/users/1184574519692767272"
               target="_blank"
               rel="noopener noreferrer"
               className="text-4xl text-white hover:text-blue-400 transition-colors"
