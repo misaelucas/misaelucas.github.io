@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
-import { Footer } from "../components/Footer";
+import Footer from "../components/Footer";
 import ChipTheCup from "../posts/ChipTheCup";
 
 const Blog = () => {
@@ -27,9 +27,6 @@ const Blog = () => {
     <div className="flex flex-col fade-in min-h-screen">
       <div className="flex-grow">
         <Header />
-        <div className="flex justify-center flex-wrap text-center text-xl md:text-xl lg:text-2xl xl:text-3xl font-bold mb-4 text-white">
-          Creed Thoughts
-        </div>
         <div className="flex justify-start">
           <div className="w-full mx-auto">
             <div className="max-w-3xl mx-auto ml-12">

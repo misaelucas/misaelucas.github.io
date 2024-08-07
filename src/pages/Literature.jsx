@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
-import { Footer } from "../components/Footer";
+import Footer from "../components/Footer";
 import DionSixtyEighth from "../posts/DionSixtyEighth";
 import Siddhartha from "../posts/Siddhartha"; // Import the new component
 import "../App.css";
