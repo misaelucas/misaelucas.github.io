@@ -9,6 +9,17 @@ body {
   animation: fadeIn 2s ease-out forwards;
 }
 
+.fade-in-3secs {
+  opacity: 0;
+  animation: fadeIn 3s ease-out forwards;
+}
+
+.fade-in-8secs {
+  opacity: 0;
+  animation: fadeIn 8s ease-out forwards;
+}
+
+
 a {
   text-decoration: none;
   color: white;
