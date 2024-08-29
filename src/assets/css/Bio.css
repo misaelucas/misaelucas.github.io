@@ -1,5 +1,7 @@
 .blur-opacity .underline {
-  transition: filter 0.3s ease, opacity 0.3s ease;
+  transition:
+    filter 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .blur-opacity:hover .underline {
@@ -19,4 +21,36 @@
   vertical-align: middle;
   height: 1em;
   margin-bottom: 12px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fade-in class with different delays */
+.fade-in {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards; /* Duration and ease-out */
+}
+
+.fade-in-1 {
+  animation-delay: 0.3s;
+}
+
+.fade-in-2 {
+  animation-delay: 0.5s;
+}
+
+.fade-in-3 {
+  animation-delay: 0.7s;
+}
+
+.fade-in-4 {
+  animation-delay: 1.3s;
 }
