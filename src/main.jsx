@@ -16,5 +16,5 @@ root.render(
       <Route path="/literature" element={<Literature />} />
       <Route path="/blog" element={<Blog />} />
     </Routes>
-  </BrowserRouter>
+  </BrowserRouter>,
 );

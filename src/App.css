@@ -19,7 +19,6 @@ body {
   animation: fadeIn 8s ease-out forwards;
 }
 
-
 a {
   text-decoration: none;
   color: white;
@@ -34,9 +33,6 @@ a:hover {
 button:hover {
   transform: scale(1.1);
 }
-
-
-
 
 @keyframes fadeIn {
   from {

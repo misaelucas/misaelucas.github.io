@@ -23,24 +23,23 @@ const materialUiSvg = (
   </svg>
 ); // I DONT KNOW WHY WHEN BUILDING WHEN VITE I DONT HAVE THIS ICON... :( IT HAD USING CREATE-REACT-APP.
 
-const Projects = () => {
-  const projects = [
+const Work = () => {
+  const Work = [
     {
-      name: "Anabolic Archives",
+      name: "Centro Médico Hebrom",
       description:
-        "An application where users can create fitness protocols and filter according to their own parameters.",
-      icon: <FaDatabase />,
-      technologiesUsed: ["React", "TailwindCSS", "Firebase", "Material-UI"],
-      link: "https://github.com/misaelucas/anabolica",
+        "Medical clinic website, SPA made with React and Tailwindcss.",
+      icon: <FaReact />,
+      technologiesUsed: ["React", "TailwindCSS"],
+      link: "https://hebrom.pages.dev/",
     },
-
     {
-      name: "HnH Server Checker",
+      name: "RHiD ",
       description:
-        "HnH Server Checker is a Python script utilizing web scraping with BeautifulSoup to monitor the real-time status of the Haven and Hearth game server from an online URL.",
-      icon: <FaPython />,
-      technologiesUsed: ["Python"],
-      link: "https://github.com/misaelucas/HnH-Server-Checker",
+        "Medical clinic website, SPA made with React and Tailwindcss.",
+      icon: <FaReact />,
+      technologiesUsed: ["React", "TailwindCSS"],
+      link: "https://hebrom.pages.dev/",
     },
   ];
 
@@ -73,26 +72,26 @@ const Projects = () => {
   };
 
   return (
-    <div className="flex flex-col gap-6 bg-cool-blue p-4 -ml-2 rounded-lg">
+    <div className="flex flex-col gap-6 bg-cool-blue p-4 -ml-2 rounded-lg ">
       <div className="relative blur-opacity group">
         <div className="mb-1 text-2xl sm:text-4xl md:text-3xl sm:-ml-4 lg:text-3xl font-bold mt-12 w-80 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 text-white">
-          My Projects
+          My Work
         </div>
         <div className="absolute underline bottom-0 left-0 w-full h-0.5 bg-pink-600 transition-colors duration-300"></div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-        {projects.map((project, index) => (
+        {Work.map((Work, index) => (
           <a
             key={index}
-            href={project.link}
+            href={Work.link}
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col text-white bg-slate-800 font-sans rounded-lg p-4 shadow-lg hover:bg-pink-700 transition duration-500 ease-in-out transform-gpu hover:scale-105"
           >
-            <h3 className="text-xl mb-2 md:mb-4">{project.name}</h3>
-            <p className="mt-2 mb-4 flex-grow">{project.description}</p>
+            <h3 className="text-xl mb-2 md:mb-4">{Work.name}</h3>
+            <p className="mt-2 mb-4 flex-grow">{Work.description}</p>
             <div className="mt-4 grid grid-cols-2 gap-2">
-              {project.technologiesUsed.map((technology, index) => (
+              {Work.technologiesUsed.map((technology, index) => (
                 <div
                   key={index}
                   className={`flex items-center justify-center h-10 md:h-12 rounded-md ${technologyIcons[technology].bgClass}`}
@@ -111,4 +110,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Work;

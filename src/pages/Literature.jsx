@@ -38,10 +38,10 @@ function Literature() {
             key={index}
             className="py-8 border-b border-white font-sans font-semibold border-opacity-25 last:border-b text-center"
           >
-            <h2 className="text-2xl mb-2">
-                {book.author}
-            </h2>
-            <h3 className="text-xl sm:text-2xl mb-4 px-5 italic">{book.title}</h3>
+            <h2 className="text-2xl mb-2">{book.author}</h2>
+            <h3 className="text-xl sm:text-2xl mb-4 px-5 italic">
+              {book.title}
+            </h3>
             <button
               onClick={() => toggleTextDisplay(index)}
               className="bg-pink-600 text-sm font-sans hover:bg-pink-600 rounded p-1 transition-all duration-500"
