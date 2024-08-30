@@ -4,15 +4,12 @@ import MainPage from "./components/MainPage";
 import Footer from "./components/Footer";
 
 function App() {
-  console.log(
-    "Hallo =)."
-  );
+  console.log("Halloj =).");
   return (
     <div className="App overflow-hidden">
       <Header />
       <MainPage />
       <Footer />
-
     </div>
   );
 }
