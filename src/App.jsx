@@ -6,11 +6,14 @@ import Footer from "./components/Footer";
 
 function App() {
   console.log("Halloj =).");
+  const initialLanguage = localStorage.getItem("isEnglish") === "true";
 
-  const [isEnglish, setIsEnglish] = useState(true);
+  const [isEnglish, setIsEnglish] = useState(initialLanguage);
 
   const toggleLanguage = () => {
-    setIsEnglish(!isEnglish);
+    const newLanguage = !isEnglish;
+    setIsEnglish(newLanguage);
+    localStorage.setItem("isEnglish", newLanguage);
   };
 
   return (
