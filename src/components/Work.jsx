@@ -23,20 +23,22 @@ const materialUiSvg = (
   </svg>
 ); // I DONT KNOW WHY WHEN BUILDING WHEN VITE I DONT HAVE THIS ICON... :( IT HAD USING CREATE-REACT-APP.
 
-const Work = () => {
+const Work = ({ isEnglish }) => {
   const Work = [
     {
       name: "Centro Médico Hebrom",
-      description:
-        "Medical clinic website, SPA made with React and Tailwindcss.",
+      description: isEnglish
+        ? "Medical clinic website, SPA made with React and Tailwindcss."
+        : "Website de clínica médica, SPA feito com React e Tailwindcss.",
       icon: <FaReact />,
       technologiesUsed: ["React", "TailwindCSS"],
       link: "https://hebrom.pages.dev/",
     },
     {
       name: "RHiD ",
-      description:
-        "Medical clinic website, SPA made with React and Tailwindcss.",
+      description: isEnglish
+        ? "Medical clinic website, SPA made with React and Tailwindcss."
+        : "Website de clínica médica, SPA feito com React e Tailwindcss.",
       icon: <FaReact />,
       technologiesUsed: ["React", "TailwindCSS"],
       link: "https://hebrom.pages.dev/",
@@ -75,7 +77,7 @@ const Work = () => {
     <div className="flex flex-col gap-6 bg-cool-blue p-4 -ml-2 rounded-lg ">
       <div className="relative blur-opacity group">
         <div className="mb-1 text-2xl sm:text-4xl md:text-3xl sm:-ml-4 lg:text-3xl font-bold mt-12 w-80 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 text-white">
-          My Work
+          {isEnglish ? "Work" : "Trabalho"}
         </div>
         <div className="absolute underline bottom-0 left-0 w-full h-0.5 bg-pink-600 transition-colors duration-300"></div>
       </div>
