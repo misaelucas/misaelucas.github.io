@@ -9,11 +9,19 @@ const MainPage = ({ isEnglish }) => {
       <div className="flex flex-col items-center text-center p-4 lg:p-8 max-w-screen-lg">
         <div className="font-bold font-sans text-3xl sm:text-4xl lg:text-5xl tracking-wider mb-4">
           <div className="flex items-center justify-center">
-            <div className="flex space-x-2">
-              <span className="fade-in fade-in-1">Hi,</span>
-              <span className="fade-in fade-in-2">I'm</span>
-              <span className="fade-in fade-in-3">Misa.</span>
-            </div>
+            {isEnglish ? (
+              <div className="flex space-x-2">
+                <span className="fade-in fade-in-1">Hi,</span>
+                <span className="fade-in fade-in-2">I'm</span>
+                <span className="fade-in fade-in-3">Misa.</span>
+              </div>
+            ) : (
+              <div className="flex space-x-2">
+                <span className="fade-in fade-in-1">Olá,</span>
+                <span className="fade-in fade-in-2">Eu sou</span>
+                <span className="fade-in fade-in-3">Misa.</span>
+              </div>
+            )}
             <img
               src={Gengar}
               alt="Gengar animation"
