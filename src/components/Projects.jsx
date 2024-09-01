@@ -23,21 +23,22 @@ const materialUiSvg = (
   </svg>
 ); // I DONT KNOW WHY WHEN BUILDING WHEN VITE I DONT HAVE THIS ICON... :( IT HAD USING CREATE-REACT-APP.
 
-const Projects = () => {
+const Projects = ({ isEnglish }) => {
   const projects = [
     {
       name: "Anabolic Archives",
-      description:
-        "An application where users can create fitness protocols and filter according to their own parameters.",
+      description: isEnglish
+        ? "An application where users can create fitness protocols and filter according to their own parameters."
+        : "Um aplicativo onde os usuários podem criar protocolos de fitness e filtrar de acordo com seus próprios parâmetros.",
       icon: <FaDatabase />,
       technologiesUsed: ["React", "TailwindCSS", "Firebase", "Material-UI"],
       link: "https://github.com/misaelucas/anabolica",
     },
-
     {
       name: "HnH Server Checker",
-      description:
-        "HnH Server Checker is a Python script utilizing web scraping with BeautifulSoup to monitor the real-time status of the Haven and Hearth game server from an online URL.",
+      description: isEnglish
+        ? "HnH Server Checker is a Python script utilizing web scraping with BeautifulSoup to monitor the real-time status of the Haven and Hearth game server from an online URL."
+        : "HnH Server Checker é um script Python que utiliza web scraping com BeautifulSoup para monitorar o status em tempo real do servidor do jogo Haven and Hearth a partir de uma URL online.",
       icon: <FaPython />,
       technologiesUsed: ["Python"],
       link: "https://github.com/misaelucas/HnH-Server-Checker",
@@ -76,7 +77,7 @@ const Projects = () => {
     <div className="flex flex-col gap-6 bg-cool-blue p-4 -ml-2 rounded-lg">
       <div className="relative blur-opacity group">
         <div className="mb-1 text-2xl sm:text-4xl md:text-3xl sm:-ml-4 lg:text-3xl font-bold mt-12 w-80 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 text-white">
-          My Projects
+          {isEnglish ? "Projects" : "Projetos"}
         </div>
         <div className="absolute underline bottom-0 left-0 w-full h-0.5 bg-pink-600 transition-colors duration-300"></div>
       </div>
