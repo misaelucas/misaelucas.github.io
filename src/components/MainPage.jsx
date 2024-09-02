@@ -1,7 +1,6 @@
 import "../assets/css/Bio.css";
 import Projects from "./Projects";
 import Gengar from "../assets/img/gengar.gif";
-import Work from "./Work";
 
 const MainPage = ({ isEnglish }) => {
   return (
