@@ -105,16 +105,16 @@ const Projects = ({ isEnglish }) => {
         <div className="mb-1 text-2xl sm:text-4xl md:text-3xl sm:-ml-4 lg:text-3xl font-bold mt-12 text-start text-white">
           {isEnglish ? "Projects" : "Projetos"}
         </div>
-        <div className="absolute underline bottom-0 left-0 w-full h-0.5 bg-pink-600 transition-colors duration-300"></div>
+        <div className="absolute underline bottom-0 left-0 w-full h-0.5 bg-green-600 transition-colors duration-300"></div>
       </div>
-      <div className="flex flex-col gap-4 w-full">
+      <div className="flex flex-col gap-4 w-full shadow-xl opacity-85">
         {projects.map((project, index) => (
           <a
             key={index}
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col text-white bg-gray-900 rounded-lg p-4 sm:p-6 shadow-lg hover:bg-pink-700 transition duration-300 ease-in-out transform-gpu hover:scale-105 w-full"
+            className="flex flex-col text-white bg-gray-900 rounded-lg p-4 sm:p-6 shadow-lg hover:bg-green-600 transition duration-300 ease-in-out transform-gpu hover:scale-105 w-full"
           >
             <h3 className="text-lg md:text-xl mb-1 text-left font-bold">
               {project.name}
