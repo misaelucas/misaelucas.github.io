@@ -17,7 +17,7 @@ function App() {
   };
 
   return (
-    <div className="App overflow-hidden">
+    <div className="App overflow-hidden  font-montserrat">
       <Header isEnglish={isEnglish} toggleLanguage={toggleLanguage} />
       <MainPage isEnglish={isEnglish} />
       <Footer />
