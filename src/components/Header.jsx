@@ -6,7 +6,7 @@ import usaFlag from "../assets/img/usa-flag.svg";
 
 function Header({ isEnglish, toggleLanguage }) {
   return (
-    <div className="flex justify-between fade-in text-white font-mono mt-4">
+    <div className="flex justify-between fade-in text-white mt-4">
       <div className="flex text-xl underline underline-offset-4">
         <div className="mx-2 mr-4">
           <Link
@@ -43,7 +43,7 @@ function Header({ isEnglish, toggleLanguage }) {
         <div className="mx-2 ml-4">
           <Link
             to="/contact"
-            className="px-2 py-1 rounded relative overflow-hidden group"
+            className="px-2 py-2 rounded relative overflow-hidden group"
           >
             <span className="absolute left-0 top-0 w-full h-full bg-transparent group-hover:bg-pink-600 rounded-r transition-all duration-500"></span>
             <span className="relative z-10">contact</span>
