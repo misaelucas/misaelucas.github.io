@@ -51,9 +51,8 @@ function Header({ isEnglish, toggleLanguage }) {
         </div>
       </div>
       <div className="mr-4  flex items-center space-x-4">
-        {/* LinkedIn Icon */}
         <a
-          href="https://www.linkedin.com" // Replace with your LinkedIn profile URL
+          href="https://www.linkedin.com/in/misael-lucas" 
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-blue-400 transition duration-300"
