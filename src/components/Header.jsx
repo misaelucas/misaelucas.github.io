@@ -46,13 +46,17 @@ function Header({ isEnglish, toggleLanguage }) {
             className="px-2 py-2 rounded relative overflow-hidden group"
           >
             <span className="absolute left-0 top-0 w-full h-full bg-transparent group-hover:bg-pink-600 rounded-r transition-all duration-500"></span>
-            <span className="relative z-10">contact</span>
+            {isEnglish ? (
+              <span className="relative z-10">contact</span>
+            ) : (
+              <span className="relative z-10">contato</span>
+            )}
           </Link>
         </div>
       </div>
       <div className="mr-4  flex items-center space-x-4">
         <a
-          href="https://www.linkedin.com/in/misael-lucas" 
+          href="https://www.linkedin.com/in/misael-lucas"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-blue-400 transition duration-300"
