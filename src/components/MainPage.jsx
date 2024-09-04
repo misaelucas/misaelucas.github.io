@@ -44,7 +44,7 @@ const MainPage = ({ isEnglish }) => {
         </div>
 
         <div className="flex flex-col">
-     <Projects isEnglish={isEnglish} />{" "}
+          <Projects isEnglish={isEnglish} />{" "}
         </div>
       </div>
     </div>
