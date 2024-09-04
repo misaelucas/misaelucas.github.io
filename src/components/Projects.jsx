@@ -65,7 +65,7 @@ const Projects = ({ isEnglish }) => {
         : "Um aplicativo onde os usuários podem criar protocolos estéticos e filtrar de acordo com seus próprios parâmetros.",
       icon: <FaDatabase />,
       technologiesUsed: ["React", "TailwindCSS", "Firebase", "Material-UI"],
-      link: "https://github.com/misaelucas/anabolica",
+      link: "#",
     },
     {
       name: "HnH Server Checker",
@@ -80,7 +80,7 @@ const Projects = ({ isEnglish }) => {
 
   const technologyIcons = {
     React: { icon: <FaReact />, bgClass: "bg-blue-500", name: "React" },
-    Redux: { icon: <FaReact />, bgClass: "bg-purple-500", name: "Redux" }, // Added Redux
+    Redux: { icon: <FaReact />, bgClass: "bg-purple-500", name: "Redux" }, 
     Firebase: {
       icon: <SiFirebase />,
       bgClass: "bg-yellow-600",
@@ -119,40 +119,72 @@ const Projects = ({ isEnglish }) => {
         <div className="absolute underline bottom-0 left-0 w-full h-0.5 bg-green-600 transition-colors duration-300"></div>
       </div>
       <div className="flex flex-col gap-4 w-full shadow-xl opacity-85">
-        {projects.map((project, index) => (
-          <a
-            key={index}
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col text-white bg-gray-900 rounded-lg p-4 sm:p-6 shadow-lg hover:bg-green-600 transition duration-300 ease-in-out transform-gpu hover:scale-105 w-full"
-          >
-            <h3 className="text-lg md:text-xl mb-1 text-left font-bold">
-              {project.name}
-            </h3>
-            <p className="text-sm sm:text-base mb-2 text-left max-w-full sm:max-w-prose">
-              {project.description}
-            </p>
+        {projects.map((project, index) =>
+          project.link && project.link !== "#" ? (
+            <a
+              key={index}
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col text-white bg-gray-900 rounded-lg p-4 sm:p-6 shadow-lg hover:bg-green-600 transition duration-300 ease-in-out transform-gpu hover:scale-105 w-full"
+            >
+              <h3 className="text-lg md:text-xl mb-1 text-left font-bold">
+                {project.name}
+              </h3>
+              <p className="text-sm sm:text-base mb-2 text-left max-w-full sm:max-w-prose">
+                {project.description}
+              </p>
 
-            <div className="mt-2 flex flex-wrap gap-2">
-              {project.technologiesUsed.map((technology, index) => (
-                <div
-                  key={index}
-                  className={`flex items-center justify-center h-8 px-2 rounded-md ${
-                    technologyIcons[technology]?.bgClass || "bg-gray-500"
-                  }`}
-                >
-                  {technologyIcons[technology]?.icon || (
-                    <span className="text-white text-xs ml-1">Icon</span>
-                  )}
-                  <span className="text-white text-xs ml-1">
-                    {technologyIcons[technology]?.name || technology}
-                  </span>
-                </div>
-              ))}
+              <div className="mt-2 flex flex-wrap gap-2">
+                {project.technologiesUsed.map((technology, index) => (
+                  <div
+                    key={index}
+                    className={`flex items-center justify-center h-8 px-2 rounded-md ${
+                      technologyIcons[technology]?.bgClass || "bg-gray-500"
+                    }`}
+                  >
+                    {technologyIcons[technology]?.icon || (
+                      <span className="text-white text-xs ml-1">Icon</span>
+                    )}
+                    <span className="text-white text-xs ml-1">
+                      {technologyIcons[technology]?.name || technology}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </a>
+          ) : (
+            <div
+              key={index}
+              className="flex flex-col text-white bg-gray-900 rounded-lg p-4 sm:p-6 shadow-lg w-full cursor-default"
+            >
+              <h3 className="text-lg md:text-xl mb-1 text-left font-bold">
+                {project.name}
+              </h3>
+              <p className="text-sm sm:text-base mb-2 text-left max-w-full sm:max-w-prose">
+                {project.description}
+              </p>
+
+              <div className="mt-2 flex flex-wrap gap-2">
+                {project.technologiesUsed.map((technology, index) => (
+                  <div
+                    key={index}
+                    className={`flex items-center justify-center h-8 px-2 rounded-md ${
+                      technologyIcons[technology]?.bgClass || "bg-gray-500"
+                    }`}
+                  >
+                    {technologyIcons[technology]?.icon || (
+                      <span className="text-white text-xs ml-1">Icon</span>
+                    )}
+                    <span className="text-white text-xs ml-1">
+                      {technologyIcons[technology]?.name || technology}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </a>
-        ))}
+          ),
+        )}
       </div>
     </div>
   );
