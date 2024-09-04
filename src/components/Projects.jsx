@@ -41,6 +41,15 @@ const Projects = ({ isEnglish }) => {
       link: "https://centromedicohebrom.com.br/",
     },
     {
+      name: "Bober",
+      description: isEnglish
+        ? "A full-stack web application using React, Redux, Node.js, and MongoDB to optimize company operations, improving efficiency and data accuracy. The application streamlines patient appointments, procedures, and financial data management, featuring a user-friendly interface for receptionists, robust reporting tools for management, and secure authentication."
+        : "Aplicação web full-stack feita utilizando React, Redux, Node.js e MongoDB. O aplicativo permite o registro de pacientes, procedimentos e gerenciamento de dados financeiros, apresentando uma interface amigável para recepcionistas, ferramentas de relatórios robustas para gerenciamento e autenticação segura.",
+      icon: <FaReact />,
+      technologiesUsed: ["React", "Redux", "Node.js", "MongoDB", "TailwindCSS"],
+      link: "#",
+    },
+    {
       name: "RHiD Tracker",
       description: isEnglish
         ? "Python-based automation program using Selenium to efficiently monitor employee attendance. The program extracts clock-in and clock-out data from a web-based timekeeping system, ensuring data accuracy through rigorous validation checks. Real-time alerts are delivered via Twilio, with robust error handling in place to maintain system reliability."
@@ -64,13 +73,14 @@ const Projects = ({ isEnglish }) => {
         ? "A comprehensive solution to track the status of the Haven and Hearth game server. This project includes a Python backend to monitor the server and a React frontend to display the data interactively."
         : "Uma solução robusta para rastrear o status do servidor de um jogo chamado Haven and Hearth. Este projeto inclui um backend feito em Python para monitorar o servidor e React no frontend para exibir os dados interativamente.",
       icon: <FaPython />,
-      technologiesUsed: ["Python", "Flask", "Axios"], // Included Flask and Axios for this project
+      technologiesUsed: ["Python", "Flask", "Axios"],
       link: "https://github.com/misaelucas/HnH-Server-Checker",
     },
   ];
 
   const technologyIcons = {
     React: { icon: <FaReact />, bgClass: "bg-blue-500", name: "React" },
+    Redux: { icon: <FaReact />, bgClass: "bg-purple-500", name: "Redux" }, // Added Redux
     Firebase: {
       icon: <SiFirebase />,
       bgClass: "bg-yellow-600",
@@ -82,6 +92,7 @@ const Projects = ({ isEnglish }) => {
       bgClass: "bg-sky-600",
       name: "TailwindCSS",
     },
+    MongoDB: { icon: <FaDatabase />, bgClass: "bg-green-800", name: "MongoDB" }, // Added MongoDB
     "React Native": {
       icon: <FaMobileAlt />,
       bgClass: "bg-blue-500",
@@ -95,8 +106,8 @@ const Projects = ({ isEnglish }) => {
     },
     Express: { icon: <FaNodeJs />, bgClass: "bg-gray-900", name: "Express" },
     Python: { icon: <FaPython />, bgClass: "bg-yellow-500", name: "Python" },
-    Flask: { icon: <SiFlask />, bgClass: "bg-gray-300", name: "Flask" }, // Added Flask icon
-    Axios: { icon: <SiAxios />, bgClass: "bg-blue-600", name: "Axios" }, // Added Axios icon
+    Flask: { icon: <SiFlask />, bgClass: "bg-gray-300", name: "Flask" },
+    Axios: { icon: <SiAxios />, bgClass: "bg-blue-600", name: "Axios" },
   };
 
   return (
@@ -127,11 +138,15 @@ const Projects = ({ isEnglish }) => {
               {project.technologiesUsed.map((technology, index) => (
                 <div
                   key={index}
-                  className={`flex items-center justify-center h-8 px-2 rounded-md ${technologyIcons[technology].bgClass}`}
+                  className={`flex items-center justify-center h-8 px-2 rounded-md ${
+                    technologyIcons[technology]?.bgClass || "bg-gray-500"
+                  }`}
                 >
-                  {technologyIcons[technology].icon}
+                  {technologyIcons[technology]?.icon || (
+                    <span className="text-white text-xs ml-1">Icon</span>
+                  )}
                   <span className="text-white text-xs ml-1">
-                    {technologyIcons[technology].name}
+                    {technologyIcons[technology]?.name || technology}
                   </span>
                 </div>
               ))}
