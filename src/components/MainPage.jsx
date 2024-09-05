@@ -21,7 +21,7 @@ const MainPage = ({ isEnglish }) => {
           </div>
         </div>
 
-        <div className="text-md md:text-lg text-justify font-medium max-w-prose">
+        <div className="text-sm lg:text-xl text-justify font-medium max-w-prose">
           {isEnglish ? (
             <>
               <p className="font-montserrat">
