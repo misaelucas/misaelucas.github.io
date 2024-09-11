@@ -41,10 +41,10 @@ const Projects = ({ isEnglish }) => {
       link: "https://centromedicohebrom.com.br/",
     },
     {
-      name: "Bober",
+      name: "Anno Domini",
       description: isEnglish
-        ? "A full-stack web application using React, Redux, Node.js, and MongoDB to optimize company operations, improving efficiency and data accuracy. The application streamlines patient appointments, procedures, and financial data management, featuring a user-friendly interface for receptionists, robust reporting tools for management, and secure authentication."
-        : "Aplicação web full-stack feita utilizando React, Redux, Node.js e MongoDB. O aplicativo permite o registro de pacientes, procedimentos e gerenciamento de dados financeiros, apresentando uma interface amigável para recepcionistas, ferramentas de relatórios robustas para gerenciamento e autenticação segura.",
+        ? "A full-stack web application using React, Redux, Node.js, and MongoDB to optimize company operations. The application contains several functionalities: appointment and procedure scheduling, financial data management, patient registration. With a user-friendly interface for receptionists, management, and doctors, it also has a dashboard with robust data visualization"
+        : "Aplicação web full-stack feita utilizando React, Redux, Node.js e MongoDB. O aplicativo permite o registro de pacientes, procedimentos e gerenciamento de dados financeiros, apresentando uma interface amigável para recepcionistas, gestão, e médicos. Também possui um dashboard para visualização de dados de forma robusta.",
       icon: <FaReact />,
       technologiesUsed: ["React", "Redux", "Node.js", "MongoDB", "TailwindCSS"],
       link: "#",
@@ -52,8 +52,8 @@ const Projects = ({ isEnglish }) => {
     {
       name: "RHiD Tracker",
       description: isEnglish
-        ? "Python-based automation program using Selenium to efficiently monitor employee attendance. The program extracts clock-in and clock-out data from a web-based timekeeping system, ensuring data accuracy through rigorous validation checks. Real-time alerts are delivered via Twilio, with robust error handling in place to maintain system reliability."
-        : "Programa de automação baseado em Python usando Selenium para monitorar eficientemente a frequência dos funcionários. O programa extrai dados de entrada e saída de um sistema de controle de ponto, garantindo a precisão dos dados por meio de verificações de validação rigorosas. Alertas em tempo real são entregues via Twilio, com tratamento de erros robusto para manter a confiabilidade do sistema.",
+        ? "Application using Python and Selenium to monitor employee attendance. The program extracts input and output data from an online timekeeping system, ensuring data accuracy and graphing. Real-time alerts are delivered via Twilio."
+        : "Aplicação feita em Python utilizando Selenium para monitorar a presença dos funcionários. O programa extrai dados de entrada e saída de um sistema de ponto online, garantindo a precisão dos dados e plotagem de gráficos. Alertas em tempo real são entregues via Twilio.",
       icon: <FaPython />,
       technologiesUsed: ["Python"],
       link: "#",
@@ -80,7 +80,7 @@ const Projects = ({ isEnglish }) => {
 
   const technologyIcons = {
     React: { icon: <FaReact />, bgClass: "bg-blue-500", name: "React" },
-    Redux: { icon: <FaReact />, bgClass: "bg-purple-500", name: "Redux" }, 
+    Redux: { icon: <FaReact />, bgClass: "bg-purple-500", name: "Redux" },
     Firebase: {
       icon: <SiFirebase />,
       bgClass: "bg-yellow-600",
