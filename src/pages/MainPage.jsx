@@ -1,5 +1,5 @@
 import "../assets/css/Bio.css";
-import Projects from "./Projects";
+import Projects from "../components/Projects";
 import Gengar from "../assets/img/gengar.gif";
 
 const MainPage = ({ isEnglish }) => {

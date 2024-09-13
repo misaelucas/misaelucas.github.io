@@ -1,7 +1,7 @@
 import "./App.css";
-import { useState } from "react"; //
+import { useState } from "react";
+import MainPage from "./pages/MainPage";
 import Header from "./components/Header";
-import MainPage from "./components/MainPage";
 import Footer from "./components/Footer";
 
 function App() {
