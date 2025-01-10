@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 function App() {
-  console.log("Halloj =).");
+  console.log("Halloj =)");
   const initialLanguage = localStorage.getItem("isEnglish") === "true";
 
   const [isEnglish, setIsEnglish] = useState(initialLanguage);
