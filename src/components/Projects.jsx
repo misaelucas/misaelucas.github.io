@@ -1,3 +1,5 @@
+// src/components/Projects.js
+import React from "react";
 import {
   FaNodeJs,
   FaReact,
@@ -35,7 +37,7 @@ const Projects = ({ isEnglish }) => {
       name: "Centro Médico Hebrom",
       description: isEnglish
         ? "A minimalist medical clinic website built with React and TailwindCSS, designed to deliver essential information clearly and effectively. The UI is focused on guiding users seamlessly toward making an appointment."
-        : "Um website minimalista para clínica médica construído com React e TailwindCSS, projetado para fornecer informações essenciais de forma clara e eficaz. A interface é focada em guiar os usuários de maneira intuitiva para marcar uma consulta.",
+        : "Um website minimalista para clínica médica feito em React e TailwindCSS, projetado para fornecer informações essenciais de forma clara e eficaz. A interface é focada em guiar os usuários de maneira intuitiva para marcar uma consulta.",
       icon: <FaReact />,
       technologiesUsed: ["React", "TailwindCSS"],
       link: "https://centromedicohebrom.com.br/",
@@ -43,8 +45,8 @@ const Projects = ({ isEnglish }) => {
     {
       name: "Anno Domini",
       description: isEnglish
-        ? "A full-stack web application using React, Redux, Node.js, and MongoDB to optimize company operations. The application contains several functionalities: appointment and procedure scheduling, financial data management, patient registration. With a user-friendly interface for receptionists, management, and doctors, it also has a dashboard with robust data visualization"
-        : "Aplicação web full-stack feita utilizando React, Redux, Node.js e MongoDB. O aplicativo permite o registro de pacientes, procedimentos e gerenciamento de dados financeiros, apresentando uma interface amigável para recepcionistas, gestão, e médicos. Também possui um dashboard para visualização de dados de forma robusta.",
+        ? "A full-stack web application using React, Redux, Node.js, and MongoDB to optimize company operations. The application contains several functionalities: appointment and procedure scheduling, financial data management, patient registration. With a user-friendly interface for receptionists, management, and doctors, it also has a dashboard with robust data visualization."
+        : "Aplicação web full-stack feita utilizando React, Redux, Node.js e MongoDB. O aplicativo permite o registro de pacientes, procedimentos e gerenciamento de dados financeiros, apresentando uma interface amigável para recepcionistas, gestão, e médicos. Também possui um dashboard para visualização de dados financeiros.",
       icon: <FaReact />,
       technologiesUsed: ["React", "Redux", "Node.js", "MongoDB", "TailwindCSS"],
       link: "#",
@@ -62,7 +64,7 @@ const Projects = ({ isEnglish }) => {
       name: "HnH Server Checker",
       description: isEnglish
         ? "A comprehensive solution to track the status of the Haven and Hearth game server."
-        : "Uma solução robusta para rastrear o status do servidor de um jogo chamado Haven and Hearth.",
+        : "Uma solução robusta para rastrear o status do servidor de Haven and Hearth.",
       icon: <FaPython />,
       technologiesUsed: ["Python", "Flask", "Axios"],
       link: "https://github.com/misaelucas/HnH-Server-Checker",
@@ -83,7 +85,7 @@ const Projects = ({ isEnglish }) => {
       bgClass: "bg-sky-600",
       name: "TailwindCSS",
     },
-    MongoDB: { icon: <FaDatabase />, bgClass: "bg-green-800", name: "MongoDB" }, // Added MongoDB
+    MongoDB: { icon: <FaDatabase />, bgClass: "bg-green-800", name: "MongoDB" },
     "React Native": {
       icon: <FaMobileAlt />,
       bgClass: "bg-blue-500",
@@ -103,13 +105,13 @@ const Projects = ({ isEnglish }) => {
 
   return (
     <div className="flex flex-col gap-6 bg-cool-blue p-4 rounded-lg w-full">
-      <div className="relative blur-opacity group">
-        <div className="mb-1 text-2xl sm:text-4xl md:text-3xl sm:-ml-4 lg:text-3xl font-bold mt-12 text-start text-white">
+      <div className="relative group">
+        <div className="mb-1 text-2xl sm:text-4xl md:text-3xl font-bold mt-12 text-left text-white">
           {isEnglish ? "Projects" : "Projetos"}
         </div>
         <div className="absolute underline bottom-0 left-0 w-full h-0.5 bg-green-600 transition-colors duration-300"></div>
       </div>
-      <div className="flex flex-col gap-4 w-full shadow-xl opacity-85">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, index) =>
           project.link && project.link !== "#" ? (
             <a
@@ -117,15 +119,14 @@ const Projects = ({ isEnglish }) => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col text-white bg-gray-900 rounded-lg p-4 sm:p-6 shadow-lg hover:bg-green-600 transition duration-300 ease-in-out transform-gpu hover:scale-105 w-full"
+              className="flex flex-col text-white bg-gray-900 rounded-lg p-4 sm:p-6 shadow-lg hover:bg-green-600 transition duration-300 ease-in-out transform hover:scale-105"
             >
               <h3 className="text-lg md:text-xl mb-1 text-left font-bold">
                 {project.name}
               </h3>
-              <p className="text-sm sm:text-base mb-2 text-left max-w-full sm:max-w-prose">
+              <p className="text-sm sm:text-base mb-2 text-left">
                 {project.description}
               </p>
-
               <div className="mt-2 flex flex-wrap gap-2">
                 {project.technologiesUsed.map((technology, index) => (
                   <div
@@ -134,9 +135,7 @@ const Projects = ({ isEnglish }) => {
                       technologyIcons[technology]?.bgClass || "bg-gray-500"
                     }`}
                   >
-                    {technologyIcons[technology]?.icon || (
-                      <span className="text-white text-xs ml-1">Icon</span>
-                    )}
+                    {technologyIcons[technology]?.icon}
                     <span className="text-white text-xs ml-1">
                       {technologyIcons[technology]?.name || technology}
                     </span>
@@ -147,15 +146,14 @@ const Projects = ({ isEnglish }) => {
           ) : (
             <div
               key={index}
-              className="flex flex-col text-white bg-gray-900 rounded-lg p-4 sm:p-6 shadow-lg w-full cursor-default"
+              className="flex flex-col text-white bg-gray-900 rounded-lg p-4 sm:p-6 shadow-lg"
             >
               <h3 className="text-lg md:text-xl mb-1 text-left font-bold">
                 {project.name}
               </h3>
-              <p className="text-sm sm:text-base mb-2 text-left max-w-full sm:max-w-prose">
+              <p className="text-sm sm:text-base mb-2 text-left">
                 {project.description}
               </p>
-
               <div className="mt-2 flex flex-wrap gap-2">
                 {project.technologiesUsed.map((technology, index) => (
                   <div
@@ -164,9 +162,7 @@ const Projects = ({ isEnglish }) => {
                       technologyIcons[technology]?.bgClass || "bg-gray-500"
                     }`}
                   >
-                    {technologyIcons[technology]?.icon || (
-                      <span className="text-white text-xs ml-1">Icon</span>
-                    )}
+                    {technologyIcons[technology]?.icon}
                     <span className="text-white text-xs ml-1">
                       {technologyIcons[technology]?.name || technology}
                     </span>
