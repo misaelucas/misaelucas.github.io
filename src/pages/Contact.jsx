@@ -1,5 +1,4 @@
 import Footer from "../components/Footer";
-import Header from "../components/Header";
 import { FaLinkedin, FaDiscord, FaEnvelope } from "react-icons/fa";
 import "../assets/css/contact.css";
 import misamisa from "../assets/img/misamisa.gif";
@@ -7,7 +6,6 @@ import misamisa from "../assets/img/misamisa.gif";
 function Contact() {
   return (
     <div className="contact-container">
-      <Header />
       <div className="content-container">
         <img
           src={misamisa}
