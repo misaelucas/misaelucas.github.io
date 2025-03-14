@@ -59,19 +59,10 @@ const Projects = ({ isEnglish }) => {
       link: "#",
     },
     {
-      name: "Anabolic Archives",
-      description: isEnglish
-        ? "An application where users can create fitness protocols and filter according to their own parameters."
-        : "Um aplicativo onde os usuários podem criar protocolos estéticos e filtrar de acordo com seus próprios parâmetros.",
-      icon: <FaDatabase />,
-      technologiesUsed: ["React", "TailwindCSS", "Firebase", "Material-UI"],
-      link: "#",
-    },
-    {
       name: "HnH Server Checker",
       description: isEnglish
-        ? "A comprehensive solution to track the status of the Haven and Hearth game server. This project includes a Python backend to monitor the server and a React frontend to display the data interactively."
-        : "Uma solução robusta para rastrear o status do servidor de um jogo chamado Haven and Hearth. Este projeto inclui um backend feito em Python para monitorar o servidor e React no frontend para exibir os dados interativamente.",
+        ? "A comprehensive solution to track the status of the Haven and Hearth game server."
+        : "Uma solução robusta para rastrear o status do servidor de um jogo chamado Haven and Hearth.",
       icon: <FaPython />,
       technologiesUsed: ["Python", "Flask", "Axios"],
       link: "https://github.com/misaelucas/HnH-Server-Checker",
