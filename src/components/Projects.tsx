@@ -48,7 +48,7 @@ const materialUiSvg = (
   </svg>
 );
 
-const Projects: React.FC<ProjectsProps> = ({ isEnglish }) => {
+export const Projects: React.FC<ProjectsProps> = ({ isEnglish }) => {
   const projects: Project[] = [
     {
       name: "Centro Médico Hebrom",
@@ -193,5 +193,3 @@ const Projects: React.FC<ProjectsProps> = ({ isEnglish }) => {
     </div>
   );
 };
-
-export default Projects;
