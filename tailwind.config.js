@@ -16,6 +16,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        "cool-blue": "#0f172a",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -49,6 +50,18 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+      },
+      fontSize: {
+        sm: "0.8rem",
+        base: "1rem",
+        xl: "1.25rem",
+        "2xl": "1.563rem",
+        "3xl": "2.553rem",
+        "4xl": "3.441rem",
+        "5xl": "5.052rem",
       },
       borderRadius: {
         lg: "var(--radius)",
