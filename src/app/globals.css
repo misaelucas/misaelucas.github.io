@@ -72,5 +72,129 @@
   }
   body {
     @apply bg-background text-foreground;
+    background: linear-gradient(to bottom, #0f172a, #1a1f35);
+  }
+}
+
+/* Cyberpunk-themed styles */
+.cyberpunk-card {
+  @apply relative overflow-hidden rounded-lg p-6 transition-all duration-300;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 255, 159, 0.2);
+  box-shadow: 0 0 20px rgba(0, 255, 159, 0.1);
+}
+
+.cyberpunk-card:hover {
+  border-color: rgba(0, 255, 159, 0.5);
+  box-shadow: 0 0 30px rgba(0, 255, 159, 0.2);
+  transform: translateY(-2px);
+}
+
+.cyberpunk-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(0, 255, 159, 0.1),
+    transparent
+  );
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+.cyberpunk-card:hover::before {
+  transform: translateX(100%);
+}
+
+.cyberpunk-text {
+  @apply font-bold;
+  color: #00ff9f;
+  text-shadow: 0 0 10px rgba(0, 255, 159, 0.5);
+}
+
+.cyberpunk-title {
+  @apply text-5xl font-bold mb-4;
+  background: linear-gradient(120deg, #00ff9f, #00f0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(0, 255, 159, 0.3);
+}
+
+.cyberpunk-nav {
+  @apply backdrop-blur-md;
+  background: rgba(15, 23, 42, 0.8);
+  border-bottom: 1px solid rgba(0, 255, 159, 0.2);
+}
+
+.cyberpunk-link {
+  @apply relative overflow-hidden;
+  color: #00ff9f;
+  transition: all 0.3s;
+}
+
+.cyberpunk-link:hover {
+  text-shadow: 0 0 10px rgba(0, 255, 159, 0.5);
+}
+
+.cyberpunk-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #00ff9f;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s;
+}
+
+.cyberpunk-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.tech-tag {
+  @apply px-3 py-1 rounded-full text-sm font-medium;
+  background: rgba(0, 255, 159, 0.1);
+  border: 1px solid rgba(0, 255, 159, 0.3);
+  color: #00ff9f;
+  transition: all 0.3s;
+}
+
+.tech-tag:hover {
+  background: rgba(0, 255, 159, 0.2);
+  border-color: rgba(0, 255, 159, 0.5);
+  transform: translateY(-1px);
+}
+
+/* Animated background */
+.cyberpunk-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background:
+    linear-gradient(to right, rgba(15, 23, 42, 0.8) 1px, transparent 1px) 0 0 /
+      40px 40px,
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.8) 1px, transparent 1px) 0 0 /
+      40px 40px;
+  animation: moveGrid 20s linear infinite;
+}
+
+@keyframes moveGrid {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(40px);
   }
 }

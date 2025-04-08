@@ -128,7 +128,7 @@ export const Projects: React.FC<ProjectsProps> = ({ isEnglish }) => {
         </div>
         <div className="absolute underline bottom-0 left-0 w-full h-0.5 bg-green-600 transition-colors duration-300"></div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) =>
           project.link && project.link !== "#" ? (
             <a
@@ -136,55 +136,46 @@ export const Projects: React.FC<ProjectsProps> = ({ isEnglish }) => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col text-white bg-gray-900 rounded-lg p-4 sm:p-6 shadow-lg hover:bg-green-600 transition duration-300 ease-in-out transform hover:scale-105"
+              className="cyberpunk-card group"
             >
-              <h3 className="text-lg md:text-xl mb-1 text-left font-bold">
-                {project.name}
-              </h3>
-              <p className="text-sm sm:text-base mb-2 text-left">
-                {project.description}
-              </p>
-              <div className="mt-2 flex flex-wrap gap-2">
-                {project.technologiesUsed.map((technology, techIndex) => (
-                  <div
-                    key={techIndex}
-                    className={`flex items-center justify-center h-8 px-2 rounded-md ${
-                      technologyIcons[technology]?.bgClass || "bg-gray-500"
-                    }`}
-                  >
-                    {technologyIcons[technology]?.icon}
-                    <span className="text-white text-xs ml-1">
-                      {technologyIcons[technology]?.name || technology}
-                    </span>
-                  </div>
-                ))}
+              <div className="relative z-10">
+                <h3 className="cyberpunk-text text-xl md:text-2xl mb-3">
+                  {project.name}
+                </h3>
+                <p className="text-gray-300 text-sm md:text-base mb-4 leading-relaxed">
+                  {project.description}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {project.technologiesUsed.map((technology, techIndex) => (
+                    <div key={techIndex} className="tech-tag">
+                      {technologyIcons[technology]?.icon}
+                      <span className="ml-1">
+                        {technologyIcons[technology]?.name || technology}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </a>
           ) : (
-            <div
-              key={index}
-              className="flex flex-col text-white bg-gray-900 rounded-lg p-4 sm:p-6 shadow-lg"
-            >
-              <h3 className="text-lg md:text-xl mb-1 text-left font-bold">
-                {project.name}
-              </h3>
-              <p className="text-sm sm:text-base mb-2 text-left">
-                {project.description}
-              </p>
-              <div className="mt-2 flex flex-wrap gap-2">
-                {project.technologiesUsed.map((technology, techIndex) => (
-                  <div
-                    key={techIndex}
-                    className={`flex items-center justify-center h-8 px-2 rounded-md ${
-                      technologyIcons[technology]?.bgClass || "bg-gray-500"
-                    }`}
-                  >
-                    {technologyIcons[technology]?.icon}
-                    <span className="text-white text-xs ml-1">
-                      {technologyIcons[technology]?.name || technology}
-                    </span>
-                  </div>
-                ))}
+            <div key={index} className="cyberpunk-card">
+              <div className="relative z-10">
+                <h3 className="cyberpunk-text text-xl md:text-2xl mb-3">
+                  {project.name}
+                </h3>
+                <p className="text-gray-300 text-sm md:text-base mb-4 leading-relaxed">
+                  {project.description}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {project.technologiesUsed.map((technology, techIndex) => (
+                    <div key={techIndex} className="tech-tag">
+                      {technologyIcons[technology]?.icon}
+                      <span className="ml-1">
+                        {technologyIcons[technology]?.name || technology}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           ),
