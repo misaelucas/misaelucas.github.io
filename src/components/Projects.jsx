@@ -36,17 +36,26 @@ const Projects = ({ isEnglish }) => {
     {
       name: "Centro Médico Hebrom",
       description: isEnglish
-        ? "A minimalist medical clinic website built with React and TailwindCSS, designed to deliver essential information clearly and effectively. The UI is focused on guiding users seamlessly toward making an appointment."
-        : "Um website minimalista para clínica médica feito em React e TailwindCSS, projetado para fornecer informações essenciais de forma clara e eficaz. A interface é focada em guiar os usuários de maneira intuitiva para marcar uma consulta.",
+        ? "A professional medical clinic website built with React and TailwindCSS. Features a streamlined appointment system and responsive design optimized for healthcare services."
+        : "Website profissional para clínica médica desenvolvido com React e TailwindCSS. Possui sistema de agendamento simplificado e design responsivo otimizado para serviços de saúde.",
       icon: <FaReact />,
       technologiesUsed: ["React", "TailwindCSS"],
       link: "https://centromedicohebrom.com.br/",
     },
     {
+      name: "Sedimentary Rocks",
+      description: isEnglish
+        ? "An interactive slideshow about sedimentary rocks, featuring AI-generated images and smooth animations. Built with React, Tailwind CSS, and Framer Motion."
+        : "Uma apresentação interativa sobre rochas sedimentares, com imagens geradas por IA e animações suaves. Construído com React, Tailwind CSS e Framer Motion.",
+      icon: <FaReact />,
+      technologiesUsed: ["React", "TailwindCSS"],
+      link: "https://github.com/misaelucas/SedimentaryRocks",
+    },
+    {
       name: "Anno Domini",
       description: isEnglish
-        ? "A full-stack web application using React, Redux, Node.js, and MongoDB to optimize company operations. The application contains several functionalities: appointment and procedure scheduling, financial data management, patient registration. With a user-friendly interface for receptionists, management, and doctors, it also has a dashboard with robust data visualization."
-        : "Aplicação web full-stack feita utilizando React, Redux, Node.js e MongoDB. O aplicativo permite o registro de pacientes, procedimentos e gerenciamento de dados financeiros, apresentando uma interface amigável para recepcionistas, gestão, e médicos. Também possui um dashboard para visualização de dados financeiros.",
+        ? "Enterprise-grade EHR system built with React, Redux, and MongoDB. Implements secure patient records, financial analytics, and role-based access control."
+        : "Sistema EHR empresarial desenvolvido com React, Redux e MongoDB. Implementa prontuários seguros, análise financeira e controle de acesso baseado em funções.",
       icon: <FaReact />,
       technologiesUsed: ["React", "Redux", "Node.js", "MongoDB", "TailwindCSS"],
       link: "#",
@@ -58,7 +67,7 @@ const Projects = ({ isEnglish }) => {
         : "Aplicação feita em Python utilizando Selenium para monitorar a presença dos funcionários. O programa extrai dados de entrada e saída de um sistema de ponto online, garantindo a precisão dos dados e plotagem de gráficos. Alertas em tempo real são entregues via Twilio.",
       icon: <FaPython />,
       technologiesUsed: ["Python"],
-      link: "#",
+      link: "https://github.com/misaelucas/RHiD-Attendance-Bot",
     },
     {
       name: "HnH Server Checker",
@@ -111,7 +120,7 @@ const Projects = ({ isEnglish }) => {
         </div>
         <div className="absolute underline bottom-0 left-0 w-full h-0.5 bg-green-600 transition-colors duration-300"></div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="flex flex-col gap-6">
         {projects.map((project, index) =>
           project.link && project.link !== "#" ? (
             <a
@@ -119,55 +128,59 @@ const Projects = ({ isEnglish }) => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col text-white bg-gray-900 rounded-lg p-4 sm:p-6 shadow-lg hover:bg-green-600 transition duration-300 ease-in-out transform hover:scale-105"
+              className="flex flex-row items-center text-white bg-gray-900 rounded-lg p-4 sm:p-6 shadow-lg hover:bg-green-600 transition duration-300 ease-in-out transform hover:scale-105"
             >
-              <h3 className="text-lg md:text-xl mb-1 text-left font-bold">
-                {project.name}
-              </h3>
-              <p className="text-sm sm:text-base mb-2 text-left">
-                {project.description}
-              </p>
-              <div className="mt-2 flex flex-wrap gap-2">
-                {project.technologiesUsed.map((technology, index) => (
-                  <div
-                    key={index}
-                    className={`flex items-center justify-center h-8 px-2 rounded-md ${
-                      technologyIcons[technology]?.bgClass || "bg-gray-500"
-                    }`}
-                  >
-                    {technologyIcons[technology]?.icon}
-                    <span className="text-white text-xs ml-1">
-                      {technologyIcons[technology]?.name || technology}
-                    </span>
-                  </div>
-                ))}
+              <div className="flex-1">
+                <h3 className="text-lg md:text-xl mb-1 text-left font-bold">
+                  {project.name}
+                </h3>
+                <p className="text-sm sm:text-base mb-2 text-left">
+                  {project.description}
+                </p>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {project.technologiesUsed.map((technology, index) => (
+                    <div
+                      key={index}
+                      className={`flex items-center justify-center h-8 px-2 rounded-md ${
+                        technologyIcons[technology]?.bgClass || "bg-gray-500"
+                      }`}
+                    >
+                      {technologyIcons[technology]?.icon}
+                      <span className="text-white text-xs ml-1">
+                        {technologyIcons[technology]?.name || technology}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </a>
           ) : (
             <div
               key={index}
-              className="flex flex-col text-white bg-gray-900 rounded-lg p-4 sm:p-6 shadow-lg"
+              className="flex flex-row items-center text-white bg-gray-900 rounded-lg p-4 sm:p-6 shadow-lg"
             >
-              <h3 className="text-lg md:text-xl mb-1 text-left font-bold">
-                {project.name}
-              </h3>
-              <p className="text-sm sm:text-base mb-2 text-left">
-                {project.description}
-              </p>
-              <div className="mt-2 flex flex-wrap gap-2">
-                {project.technologiesUsed.map((technology, index) => (
-                  <div
-                    key={index}
-                    className={`flex items-center justify-center h-8 px-2 rounded-md ${
-                      technologyIcons[technology]?.bgClass || "bg-gray-500"
-                    }`}
-                  >
-                    {technologyIcons[technology]?.icon}
-                    <span className="text-white text-xs ml-1">
-                      {technologyIcons[technology]?.name || technology}
-                    </span>
-                  </div>
-                ))}
+              <div className="flex-1">
+                <h3 className="text-lg md:text-xl mb-1 text-left font-bold">
+                  {project.name}
+                </h3>
+                <p className="text-sm sm:text-base mb-2 text-left">
+                  {project.description}
+                </p>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {project.technologiesUsed.map((technology, index) => (
+                    <div
+                      key={index}
+                      className={`flex items-center justify-center h-8 px-2 rounded-md ${
+                        technologyIcons[technology]?.bgClass || "bg-gray-500"
+                      }`}
+                    >
+                      {technologyIcons[technology]?.icon}
+                      <span className="text-white text-xs ml-1">
+                        {technologyIcons[technology]?.name || technology}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           ),
