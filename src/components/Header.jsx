@@ -36,8 +36,8 @@ function Header({ isEnglish, toggleLanguage }) {
   );
 
   return (
-    <header className="bg-gray-800 px-4 py-2">
-      <div className="flex items-center justify-between">
+    <header className="fixed w-full bg-gray-800/80 backdrop-blur-sm px-4 py-2 top-0 left-0 z-50">
+      <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Left section: Logo and nav links for larger screens */}
         <div className="flex items-center">
           <Link to="/" className="mr-4">
