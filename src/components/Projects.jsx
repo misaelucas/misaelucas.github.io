@@ -52,7 +52,7 @@ const Projects = ({ isEnglish }) => {
       link: "#",
     },
     {
-      name: "RHiD Tracker",
+      name: "RHiD-Attendance-Bot",
       description: isEnglish
         ? "Application using Python and Selenium to monitor employee attendance. The program extracts input and output data from an online timekeeping system, ensuring data accuracy and graphing. Real-time alerts are delivered via Twilio."
         : "Aplicação feita em Python utilizando Selenium para monitorar a presença dos funcionários. O programa extrai dados de entrada e saída de um sistema de ponto online, garantindo a precisão dos dados e plotagem de gráficos. Alertas em tempo real são entregues via Twilio.",
