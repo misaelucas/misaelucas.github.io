@@ -25,19 +25,17 @@ const MainPage = ({ isEnglish }) => {
           {isEnglish ? (
             <>
               <p className="font-montserrat">
-                Hello! Here, you'll find my work, projects, things I find
-                interesting to share, and perhaps a bit of literature. All my
-                work is created with a mobile-first approach and a minimalist
-                design.
+                I'm a Full Stack Developer specializing in React, Node.js and modern web technologies.
+                I focus on developing responsive applications with clean, efficient code.
+                My goal is to create elegant solutions while continuously expanding my technical skills.
               </p>
             </>
           ) : (
             <>
               <p>
-                Olá! Aqui, você encontrará meu trabalho, projetos, coisas que
-                acho interessantes para compartilhar e talvez um pouco de
-                literatura. Todo o meu trabalho é criado com uma abordagem
-                mobile-first e um design minimalista.
+                Sou um Desenvolvedor Full Stack especializado em React, Node.js e tecnologias web modernas.
+                Foco no desenvolvimento de aplicações responsivas com código limpo e eficiente.
+                Meu objetivo é criar soluções elegantes enquanto expando continuamente minhas habilidades.
               </p>
             </>
           )}
