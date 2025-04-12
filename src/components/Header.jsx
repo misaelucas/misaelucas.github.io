@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import homegengar from "../assets/img/homegengar.png";
 import { FaLinkedin, FaBars, FaTimes } from "react-icons/fa";
+import { BsGithub } from "react-icons/bs";
 import brFlag from "../assets/img/br-flag.svg";
 import usaFlag from "../assets/img/usa-flag.svg";
 
@@ -59,6 +60,14 @@ function Header({ isEnglish, toggleLanguage }) {
             className="text-white hover:text-blue-400 transition duration-300"
           >
             <FaLinkedin size={36} />
+          </a>
+          <a
+            href="https://github.com/misaelucas"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-blue-400 transition duration-300"
+          >
+            <BsGithub size={36} />
           </a>
           <button
             onClick={toggleLanguage}
